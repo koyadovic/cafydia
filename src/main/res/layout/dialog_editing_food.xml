@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNameTitle"
+            style="@style/MyTextAppearance.FieldHeader"
+            android:text="@string/dialog_food_editor_name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextNames"
+            android:id="@+id/editTextName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCarbTitle"
+            android:text="@string/dialog_food_editor_carbohydrates"
+            style="@style/MyTextAppearance.FieldHeader"
+            android:layout_marginTop="10dp" />
+
+        <org.cafydia.android.views.EditTextCarbohydratePercentage
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carbohydratePercentage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_food_editor_weight_for_unit"
+            style="@style/MyTextAppearance.FieldHeader"
+            android:id="@+id/textViewWeightUnitTitle"
+            android:layout_marginTop="10dp" />
+
+        <org.cafydia.android.views.EditTextWeight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightPerUnit" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/MyRootLayoutStyle"
+    android:background="#FFF"
+    android:paddingTop="0dp"
+    android:paddingLeft="0dp"
+    android:paddingStart="0dp"
+    android:paddingRight="0dp"
+    android:paddingEnd="0dp"
+    android:orientation="vertical"
+    android:id="@+id/rootLinearLayout">
+
+    <org.cafydia.android.views.ChartHbA1c
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/chartHbA1c"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        style="@style/MyFloatingLayoutStyle">
+
+        <org.cafydia.android.views.HbA1cImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imageViewFace"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/MyTextAppearanceMedium"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvPercentage" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:textAppearance="@style/MyTextAppearanceSmall"
+                    android:gravity="center_vertical"
+                    android:text="%"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/MyTextAppearanceMedium"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvMmol"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:textAppearance="@style/MyTextAppearanceSmall"
+                    android:gravity="center_vertical"
+                    android:text="mmol/mol"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

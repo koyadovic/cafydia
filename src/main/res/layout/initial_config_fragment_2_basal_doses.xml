@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_configuration_fragment_basal_title"
+        android:id="@+id/tvTitle"
+        android:textColor="#ccc"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_configuration_fragment_basal_breakfast"
+        android:id="@+id/textView26"
+        android:layout_marginTop="10dp"
+        android:textColor="#ccc" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:background="#2fff"
+        android:ems="10"
+        android:id="@+id/etBreakfastDose"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_configuration_fragment_basal_lunch"
+        android:id="@+id/textView28"
+        android:layout_marginTop="10dp"
+        android:textColor="#ccc" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:background="#2fff"
+        android:ems="10"
+        android:id="@+id/etLunchDose"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_configuration_fragment_basal_dinner"
+        android:id="@+id/textView29"
+        android:layout_marginTop="10dp"
+        android:textColor="#ccc" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:background="#2fff"
+        android:ems="10"
+        android:id="@+id/etDinnerDose"
+        android:textSize="22sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_configuration_fragment_basal_confirmation"
+        android:id="@+id/checkBox"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

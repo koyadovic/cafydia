@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_view_black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingRight="5dp">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/circle"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#F222"
+            android:textSize="18sp"
+            android:text="Pan" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCarbohydratePercentage"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#F555"
+                android:textStyle="bold"
+                android:text="50.7%"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/food_selected_fragment_food_element_weight"
+                android:id="@+id/tvWeightOrUnitsTitle"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="#F999"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWeightOrUnits"
+                android:gravity="right|end"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:textColor="#F999"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food_selected_fragment_food_element_carbohydrate_weight"
+                android:id="@+id/textView18"
+                android:layout_marginLeft="10dp"
+                android:textColor="#F999"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCarbohydratesWeight"
+                android:gravity="right|end"
+                android:textStyle="bold"
+                android:textColor="#F999"
+                android:layout_marginLeft="3dp"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_weight_information_food_selected_adapter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

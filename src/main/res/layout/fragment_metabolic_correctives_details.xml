@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCafydiaDefaultFullShade">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                style="@style/MetabolicTitle"
+                android:text="@string/metabolic_correctives_details_general_title"
+                android:id="@+id/tvNamddde" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_correctives_details_name"
+                android:id="@+id/tvName" />
+
+            <View style="@style/MySeparatorStyleLittleLight"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:inputType="textCapSentences"
+                android:textColor="#FAAA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_correctives_details_description"
+                android:id="@+id/tvDescriptionTitle" />
+
+            <View style="@style/MySeparatorStyleLittleLight"/>
+
+            <TextView
+                android:maxLines="3"
+                android:gravity="top|start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+
+                android:background="#0D000000"
+                android:clickable="true"
+                android:hint="@string/metabolic_correctives_details_description_hint"
+                android:padding="10dp"
+                android:textColor="#FAAA" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lDescription">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etDescription"
+                    android:lines="12"
+                    android:minLines="12"
+                    android:maxLines="12"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#FAAA"
+                    android:textColorHint="#FAAA" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/metabolic_correctives_details_description_done"
+                    android:id="@+id/bDescriptionDone"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#FFFF" />
+            </LinearLayout>
+
+            <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MetabolicTitle"
+                android:text="@string/metabolic_correctives_details_visible"
+                android:id="@+id/tvVisible" />
+-->
+            <View style="@style/MySeparatorStyleLittleLight"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp">
+
+                <CheckBox
+                    style="@style/MetabolicCheckbox"
+                    android:text="@string/metabolic_correctives_details_visible_in_meal_menu"
+
+                    android:id="@+id/cbVisible"
+                    android:textColor="#FFFF"
+                    android:buttonTint="#FFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MetabolicTitle"
+                android:text="@string/metabolic_correctives_details_type"
+                android:id="@+id/tvType" />
+
+            <View style="@style/MySeparatorStyleLittleLight"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rgType">
+
+                <RadioButton
+                    style="@style/MetabolicRadioButton"
+                    android:text="@string/metabolic_correctives_details_type_simple"
+                    android:id="@+id/rbSimple"
+                    android:buttonTint="#FFFF"
+                    android:textColor="#FFFF" />
+
+                <RadioButton
+                    style="@style/MetabolicRadioButton"
+                    android:text="@string/metabolic_correctives_details_type_complex"
+                    android:id="@+id/rbComplex"
+                    android:buttonTint="#FFFF"
+                    android:textColor="#FFFF" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MetabolicTitle"
+                android:text="@string/metabolic_correctives_details_modification_type_title"
+                android:id="@+id/tvModificationType" />
+
+            <View style="@style/MySeparatorStyleLittleLight"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rgModificationType">
+
+                <RadioButton
+                    style="@style/MetabolicRadioButton"
+                    android:text="@string/metabolic_correctives_details_modification_type_units"
+                    android:id="@+id/rbUnits"
+                    android:textColor="#FFFF"
+                    android:buttonTint="#FFFF" />
+
+                <RadioButton
+                    style="@style/MetabolicRadioButton"
+                    android:text="@string/metabolic_correctives_details_modification_type_percentage"
+                    android:id="@+id/rbPercentage"
+                    android:textColor="#FFFF"
+                    android:buttonTint="#FFFF" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lSimpleModification">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_modification"
+                    android:id="@+id/tvModificationTitle" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+                        android:text="0"
+                        android:id="@+id/tvModification"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFF" />
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sbModification"
+                        android:layout_weight="2"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lComplexModification">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_breakfast"
+                    android:id="@+id/tvModificationBreakfastTitle" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+                        android:text="0"
+                        android:id="@+id/tvModificationBreakfast"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFF" />
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sbModificationBreakfast"
+                        android:layout_weight="2"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_lunch"
+                    android:id="@+id/tvModificationLunchTitle" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+                        android:text="0"
+                        android:id="@+id/tvModificationLunch"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFF" />
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sbModificationLunch"
+                        android:layout_weight="2"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_dinner"
+                    android:id="@+id/tvModificationDinnerTitle" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+                        android:text="0"
+                        android:id="@+id/tvModificationDinner"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFF" />
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sbModificationDinner"
+                        android:layout_weight="2"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Switch
+                style="@style/MetabolicSwitch"
+                android:text="@string/metabolic_correctives_details_plan_title"
+                android:id="@+id/sPlan"
+                android:textColor="#FFFF"
+                android:buttonTint="#FFFF" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lSimplePlan">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_plan"
+                    android:id="@+id/tvPlan" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicSubTitle"
+                    android:text="@string/metabolic_correctives_details_plan_for_breakfast" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ToggleButton
+                        android:id="@+id/tbBrMo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:textOn="@string/metabolic_correctives_details_plan_monday"
+                        android:textOff="@string/metabolic_correctives_details_plan_monday"
+                        android:checked="false" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_tuesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_tuesday"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrTu" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_wednesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_wednesday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrWe" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_thursday"
+                        android:textOff="@string/metabolic_correctives_details_plan_thursday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrTh" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_friday"
+                        android:textOff="@string/metabolic_correctives_details_plan_friday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrFr"
+                        android:checked="false" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_saturday"
+                        android:textOff="@string/metabolic_correctives_details_plan_saturday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrSa"
+                        android:checked="false" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_sunday"
+                        android:textOff="@string/metabolic_correctives_details_plan_sunday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbBrSu" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicSubTitle"
+                    android:text="@string/metabolic_correctives_details_plan_for_lunch" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ToggleButton
+                        android:id="@+id/tbLuMo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_monday"
+                        android:textOff="@string/metabolic_correctives_details_plan_monday"
+                        android:checked="false"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_tuesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_tuesday"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuTu" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_wednesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_wednesday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuWe" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_thursday"
+                        android:textOff="@string/metabolic_correctives_details_plan_thursday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuTh" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_friday"
+                        android:textOff="@string/metabolic_correctives_details_plan_friday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuFr" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_saturday"
+                        android:textOff="@string/metabolic_correctives_details_plan_saturday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuSa" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_sunday"
+                        android:textOff="@string/metabolic_correctives_details_plan_sunday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbLuSu" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicSubTitle"
+                    android:text="@string/metabolic_correctives_details_plan_for_dinner" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ToggleButton
+                        android:id="@+id/tbDiMo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_monday"
+                        android:textOff="@string/metabolic_correctives_details_plan_monday"
+                        android:checked="false"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_tuesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_tuesday"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiTu" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_wednesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_wednesday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiWe" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_thursday"
+                        android:textOff="@string/metabolic_correctives_details_plan_thursday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiTh" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_friday"
+                        android:textOff="@string/metabolic_correctives_details_plan_friday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiFr" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_saturday"
+                        android:textOff="@string/metabolic_correctives_details_plan_saturday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiSa" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_sunday"
+                        android:textOff="@string/metabolic_correctives_details_plan_sunday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbDiSu" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lComplexPlan"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicTitle"
+                    android:text="@string/metabolic_correctives_details_plan"
+                    android:id="@+id/tvPlan2" />
+
+                <View style="@style/MySeparatorStyleLittleLight"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MetabolicSubTitle"
+                    android:text="@string/metabolic_correctives_details_plan_for_day" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ToggleButton
+                        android:id="@+id/tbGlMo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_monday"
+                        android:textOff="@string/metabolic_correctives_details_plan_monday"
+                        android:checked="false"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textOn="@string/metabolic_correctives_details_plan_tuesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_tuesday"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlTu" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_wednesday"
+                        android:textOff="@string/metabolic_correctives_details_plan_wednesday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlWe" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_thursday"
+                        android:textOff="@string/metabolic_correctives_details_plan_thursday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlTh" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_friday"
+                        android:textOff="@string/metabolic_correctives_details_plan_friday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlFr" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_saturday"
+                        android:textOff="@string/metabolic_correctives_details_plan_saturday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlSa" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+
+                        android:textOn="@string/metabolic_correctives_details_plan_sunday"
+                        android:textOff="@string/metabolic_correctives_details_plan_sunday"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tbGlSu" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

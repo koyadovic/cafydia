@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!---
+    |
+    | METABOLIC RHYTHMS
+    |
+    - -->
+    <style name="MetabolicChart">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">350dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="android:background">@drawable/background_layout_on_click</item> -->
+    </style>
+
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/svRoot">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/llRoot">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_data_collection_criteria_editor_since"
+            android:id="@+id/cbSince" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sSince"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_data_collection_criteria_editor_until"
+            android:id="@+id/cbUntil" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sUntil"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_data_collection_criteria_editor_day_weeks"
+            android:id="@+id/cbDayWeeks" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/llDayWeeks">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbMonday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_monday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_monday"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbTuesday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_tuesday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_tuesday"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbWednesday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_wednesday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_wednesday"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbThursday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_thursday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_thursday"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbFriday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_friday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_friday"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content" />
+
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbSaturday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_saturday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_saturday"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbSunday"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_sunday"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_sunday"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_data_collection_criteria_editor_times"
+            android:id="@+id/cbTimes" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/llTimes"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp">
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbBeforeBreakfast"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_before_breakfast"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_before_breakfast"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbAfterBreakfast"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_after_breakfast"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_after_breakfast"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp">
+
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbBeforeLunch"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_before_lunch"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_before_lunch"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbAfterLunch"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_after_lunch"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_after_lunch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp">
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbBeforeDinner"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_before_dinner"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_before_dinner"/>
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbAfterDinner"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_after_dinner"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_after_dinner"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:background="@drawable/background_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/tbInTheNight"
+                    android:textOff="@string/dialog_data_collection_criteria_editor_in_the_night"
+                    android:textOn="@string/dialog_data_collection_criteria_editor_in_the_night"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_data_collection_criteria_editor_label_rules"
+            android:id="@+id/cbLabels" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/llLabels">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibAddLabel"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_action_new_light"
+                android:background="#0000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rgLabels">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_data_collection_criteria_editor_label_rules_include"
+                    android:id="@+id/rbIncludeLabels"
+                    android:layout_weight="1"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_data_collection_criteria_editor_label_rules_exclude"
+                    android:id="@+id/rbExcludeLabels"
+                    android:layout_marginRight="10dp" />
+            </RadioGroup>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/lvLabelsSelected" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

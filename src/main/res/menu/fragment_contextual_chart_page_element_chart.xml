@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/data_criteria"
+        android:title="@string/contextual_menu_chart_page_element_chart_criteria" />
+
+    <item android:id="@+id/statistics"
+        android:title="@string/contextual_menu_chart_page_element_chart_statistical_objects" />
+
+    <item android:id="@+id/delete_chart"
+        android:title="@string/contextual_menu_chart_page_element_chart_delete" />
+
+</menu>

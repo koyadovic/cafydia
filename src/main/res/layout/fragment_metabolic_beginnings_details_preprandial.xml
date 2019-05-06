@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/colorCafydiaDefaultFullShade">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_white"
+                android:padding="5dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_section_layout_preprandial"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#FFFF"
+                    android:text="@string/metabolic_beginning_details_preprandial_title"
+                    android:id="@+id/textView" />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:id="@+id/tvTypeOfBeginning"
+                android:text="@string/metabolic_beginning_details_type_title"
+                android:layout_marginTop="10dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgType" >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/metabolic_beginning_details_global_radiobutton"
+                    android:id="@+id/rbGlobal"
+                    android:checked="false"
+                    android:textColor="#FFFF"
+                    android:buttonTint="#FFFF" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/metabolic_beginning_details_specific_radiobutton"
+                    android:id="@+id/rbSpecific"
+                    android:textColor="#FFFF"
+                    android:buttonTint="#FFFF"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_breakfast"
+                android:id="@+id/tvBreakfast"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+                    android:id="@+id/chartBreakfast" />
+
+                </LinearLayout>
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_lunch"
+                android:id="@+id/tvLunch"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+                    android:id="@+id/chartLunch" />
+
+                </LinearLayout>
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_dinner"
+                android:id="@+id/tvDinner"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+                    android:id="@+id/chartDinner" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/ivToggleShow"
+        android:src="@drawable/ic_right_panel_flap"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/ivToggleShow"
+        android:background="@drawable/bg_right_panel"
+        android:id="@+id/linearLayout">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/flNoSelection"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food_selected_fragment_no_selection"
+                style="@style/MyTextAppearance.Footer"
+                android:id="@+id/textView2"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_no_food_selected"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp" />
+        </FrameLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvSelectedFood"
+            android:layout_weight="1"
+            android:divider="#0000"
+            android:dividerHeight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <View style="@style/MySeparatorStyle"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCarbohydratesTotal"
+            android:gravity="right|end"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#F999"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="5dp" />
+
+    </LinearLayout>
+</RelativeLayout>

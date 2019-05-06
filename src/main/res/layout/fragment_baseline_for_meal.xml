@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_root_view_default">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lPreprandial"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meals_activity_baseline_preprandial"
+                    android:id="@+id/tvBaselinePreprandialTitle"
+                    style="@style/MyTextAppearance.FieldHeader.White" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lMinimum"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:id="@+id/ivMinimum"
+                        android:background="#FFFFFFFF"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvMinimum"
+                        android:text="0"
+                        android:textColor="#FFFF" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meals_activity_baseline_new"
+                    android:id="@+id/tvNewBaselinePreprandialTitle"
+                    style="@style/MyTextAppearance.FieldHeader.White"
+                    android:layout_weight="1"
+                    android:gravity="end|right" />
+            </LinearLayout>
+
+            <View style="@style/MySeparatorStyle.Preprandial"
+                android:layout_margin="0dp" />
+
+            <org.cafydia.android.views.ModificationZoneView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modificationZoneView"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:id="@+id/tvPreprandial"
+                    android:gravity="center"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:layout_marginRight="5dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/etNewPreprandial"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+            <org.cafydia.android.views.BaselineChartView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/baselineChart"
+                android:layout_weight="1"
+                android:background="@drawable/bg_view_white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lBasal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meals_activity_baseline_basal"
+                    android:id="@+id/tvBaselineBasalTitle"
+                    style="@style/MyTextAppearance.FieldHeader.White"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meals_activity_baseline_new"
+                    android:id="@+id/tvNewBaselineBasalTitle"
+                    style="@style/MyTextAppearance.FieldHeader.White"
+                    android:layout_weight="1"
+                    android:gravity="end|right" />
+            </LinearLayout>
+
+            <View style="@style/MySeparatorStyle.Basal"
+                android:layout_margin="0dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:id="@+id/tvBasal"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:gravity="center" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/etNewBasal"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity_white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/summaryLayout"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/complex_food_activity_name_title"
+                android:id="@+id/tvName"
+                style="@style/MyTextAppearance.FieldHeader"/>
+
+            <EditText
+                style="@style/EditTextNames"
+                android:id="@+id/etName"
+                android:hint="@string/complex_food_activity_name_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/complex_food_activity_total_weight_title"
+                android:id="@+id/tvWeight"
+                style="@style/MyTextAppearance.FieldHeader"/>
+
+            <org.cafydia.android.views.EditTextWeight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalWeight"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/MyFloatingLayoutStyle"
+        android:id="@+id/summaryLayout"
+        android:baselineAligned="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complex_food_activity_carbohydrate_percentage"
+                android:id="@+id/tvCarbohydrateTitle"
+                style="@style/MyTextAppearance.FieldHeader.White"
+                android:background="@drawable/bg_view_white"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCarbohydratePercent"
+                style="@style/MyTextAppearanceExtraLargeThin"
+                android:text="0.0%"
+                android:singleLine="true"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#AA000000"
+        android:id="@+id/lShadow"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rightPanel"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/leftPanel"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/help" />
+
+
+</RelativeLayout>

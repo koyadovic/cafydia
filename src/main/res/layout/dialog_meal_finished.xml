@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:id="@+id/lvFoodSelected"
+        android:divider="#0000"
+        android:dividerHeight="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lGetPreprandialDose"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:textAppearance="@style/MyTextAppearance.Black.Bold"
+                android:id="@+id/tvGetPreprandialDoseTitle"
+                android:text="@string/dialog_meal_finished_preprandial"
+                android:textColor="@color/preprandialShade"/>
+
+            <View style="@style/MySeparatorStyle.Preprandial"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/MyTextAppearanceLarge.Black"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/etGetPreprandialDose" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lPreprandialDose"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="@string/dialog_meal_finished_preprandial"
+                android:textAppearance="@style/MyTextAppearance.Black.Bold"
+                android:id="@+id/tvPreprandialDoseTitle" />
+
+            <View style="@style/MySeparatorStyle.Preprandial"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_black"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textAppearance="@style/MyTextAppearanceLarge.Black"
+                android:id="@+id/tvPreprandialDose" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lBasalDose">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|right"
+                android:text="@string/dialog_meal_finished_basal"
+                android:textAppearance="@style/MyTextAppearance.Black.Bold"
+                android:id="@+id/tvBasalDoseTitle" />
+
+            <View style="@style/MySeparatorStyle.Basal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_black"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textAppearance="@style/MyTextAppearanceLarge.Black"
+                android:id="@+id/tvBasalDose" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbAlert"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</LinearLayout>

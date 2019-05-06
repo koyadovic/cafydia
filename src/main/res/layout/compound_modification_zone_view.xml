@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compound_modification_zone_root_bg">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CompoundModificationZoneNotSelected"
+            android:text="@string/activity_baseline_modify_for_only_light_meals"
+            android:id="@+id/left"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CompoundModificationZoneSelected"
+            android:text="@string/activity_baseline_modify_for_all_meals"
+            android:id="@+id/all"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CompoundModificationZoneNotSelected"
+            android:text="@string/activity_baseline_modify_for_only_copious_meals"
+            android:id="@+id/right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

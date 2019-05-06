@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/ivToggleShow"
+        android:src="@drawable/ic_right_panel_flap"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/ivToggleShow"
+        android:background="@drawable/bg_right_panel"
+        android:id="@+id/linearLayout">
+
+
+        <ScrollView
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lBaseline"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/meals_activity_baseline"
+                        android:id="@+id/tvBaseline"
+                        style="@style/MyTextAppearance.FieldHeader" />
+
+                    <View style="@style/MyCategorySeparatorStyle"
+                        android:layout_margin="0dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meals_activity_preprandial"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvPreprandialBaseline"
+                            android:gravity="end" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meals_activity_basal"
+                            android:layout_weight="1"
+                            android:id="@+id/baselineBasalText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvBasalBaseline"
+                            android:gravity="end" />
+                    </LinearLayout>
+
+                    <org.cafydia.android.views.BaselineChartView
+                        android:clickable="false"
+                        android:id="@+id/baselineChart"
+                        style="@style/MetabolicChart"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lMetabolicRhythm"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/lBeginnings"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meals_activity_beginnings"
+                            android:id="@+id/tvMetabolicRhythm"
+                            style="@style/MyTextAppearance.FieldHeader" />
+
+                        <View style="@style/MyCategorySeparatorStyle"
+                            android:layout_margin="0dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meals_activity_preprandial"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvPreprandialBeginning" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meals_activity_basal"
+                                android:layout_weight="1"
+                                android:id="@+id/beginningsBasalText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvBasalBeginning" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_section_layout_preprandial"/>
+
+                            <org.cafydia.android.views.ModificationStartView
+                                android:clickable="false"
+                                android:id="@+id/preprandialBeginning"
+                                style="@style/MetabolicChart" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_section_layout_basal"/>
+
+                            <org.cafydia.android.views.ModificationStartView
+                                android:clickable="false"
+                                android:id="@+id/basalBeginning"
+                                style="@style/MetabolicChart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lCorrectives"
+
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meals_activity_correctives"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/tvCorrectives"
+                            style="@style/MyTextAppearance.FieldHeader" />
+
+                        <View style="@style/MyCategorySeparatorStyle"
+                            android:id="@+id/vSeparator"
+                            android:layout_below="@+id/tvCorrectives"
+                            android:layout_margin="0dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/vSeparator"
+                            android:id="@+id/lPreprandialCorrective">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meals_activity_preprandial"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvPreprandialCorrectives" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:id="@+id/lCorrectivesMore"
+                            android:layout_below="@+id/lPreprandialCorrective"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"
+                                android:id="@+id/horizontalScrollView"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="0dp">
+
+                                <GridLayout
+                                    android:id="@+id/glCorrectives"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:scrollbars="none"
+                                    android:rowCount="1"
+                                    android:useDefaultMargins="true"
+                                    android:clipChildren="true">
+
+
+                                </GridLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivLeft"
+                            android:src="@drawable/compound_grid_view_left_side"
+                            android:layout_below="@+id/lPreprandialCorrective"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivRight"
+                            android:src="@drawable/compound_grid_view_right_side"
+                            android:layout_below="@+id/lPreprandialCorrective"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lCorrectionFactor"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meals_activity_correction_factor"
+                            android:id="@+id/tvCorrectionFactor"
+                            style="@style/MyTextAppearance.FieldHeader" />
+
+                        <View style="@style/MyCategorySeparatorStyle"
+                            android:layout_margin="0dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meals_activity_preprandial"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvPreprandialCorrectionFactor" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recommendation_details_fragment_correction_factor_target"
+                                android:id="@+id/textView14"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:id="@+id/tvFactorTarget"
+                                android:layout_weight="1"
+                                android:gravity="end|right"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recommendation_details_fragment_correction_factor_current"
+                                android:id="@+id/textView17" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:id="@+id/tvFactorCurrent"
+                                android:layout_weight="1"
+                                android:gravity="end|right"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recommendation_details_fragment_correction_factor_correction_factor"
+                                android:id="@+id/textView25" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:id="@+id/tvFactor"
+                                android:layout_weight="1"
+                                android:gravity="end|right"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recommendation_details_fragment_correction_factor_modification"
+                                android:id="@+id/textView27" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:id="@+id/tvFactorModification"
+                                android:layout_weight="1"
+                                android:gravity="end|right"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

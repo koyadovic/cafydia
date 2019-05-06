@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView13"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/help_arrow_below_right"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="50dp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+        android:text="@string/help_fragment_charts_panel_2"
+        android:id="@+id/textView34"
+        android:layout_gravity="bottom|right"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="120dp" />
+
+</FrameLayout>

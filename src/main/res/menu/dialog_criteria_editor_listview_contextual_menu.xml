@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/edit_label_from_list"
+        android:title="@string/dialog_data_collection_criteria_editor_contextual_edit" />
+
+    <item android:id="@+id/delete_label_from_list"
+        android:title="@string/dialog_data_collection_criteria_editor_contextual_delete_from_list" />
+
+</menu>

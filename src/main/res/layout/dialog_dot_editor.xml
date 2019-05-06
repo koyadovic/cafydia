@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextAppearance.FieldHeader"
+        android:text="@string/dialog_dot_editor_day"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+            android:id="@+id/tvDay"
+            android:gravity="center"
+            android:layout_weight="0.5" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbDay"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextAppearance.FieldHeader"
+        android:text="@string/dialog_dot_editor_modification"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MyTextAppearanceExtraLargeThin.Black"
+            android:id="@+id/tvModification"
+            android:gravity="center"
+            android:layout_weight="0.5"/>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbModification"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

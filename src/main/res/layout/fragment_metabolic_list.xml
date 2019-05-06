@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCafydiaDefaultFullShade">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lMasterMetabolicRhythm"
+            android:background="@drawable/background_clickable_view_without_rounded_corners"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/tvMasterName"
+                style="@style/MyTextAppearanceNormal.White"
+                android:clickable="false"
+                android:layout_weight="1"
+                android:typeface="sans" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sMaster"
+                android:clickable="false"
+                android:textOff="@string/switch_not"
+                android:textOn="@string/switch_yes" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:id="@+id/lvMetabolicRhythms" />
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">Cafydia Diabetes</string>
+    <string name="send_log_text">Desafortunadamente Cafydia se ha detenido. Enviando el reporte ayudarás a mejorar la aplicación para próximas actualizaciones.</string>
+    <string name="send_log_button_text">Enviar reporte</string>
+
+    <string name="eula_accept">He leído el Acuerdo de Licencia de Usuario Final y lo acepto</string>
+
+    <!-- Activity Start -->
+    <string name="start_activity_welcome">Cuide su diabetes</string>
+
+    <!-- Initial Configuration Activity -->
+    <string name="initial_configuration_button_finish">Finalizar</string>
+    <string name="initial_configuration_button_next">Siguiente</string>
+    <string name="initial_configuration_button_previous">Anterior</string>
+    <string name="initial_configuration_button_quit">Salir</string>
+
+    <string name="initial_configuration_fragment_eula_title">Acuerdo de licencia de usuario final</string>
+
+    <string name="initial_configuration_fragment_units_title">Unidades</string>
+    <string name="initial_configuration_fragment_units_glucose">Para glucosas</string>
+    <string name="initial_configuration_fragment_units_mgdl">mg/dL</string>
+    <string name="initial_configuration_fragment_units_mmoll">mmol/L</string>
+    <string name="initial_configuration_fragment_units_weight">Para el peso</string>
+    <string name="initial_configuration_fragment_units_grams">Gramos</string>
+    <string name="initial_configuration_fragment_units_pounds">Libras</string>
+    <string name="initial_configuration_fragment_units_ounces">Onzas</string>
+
+    <string name="initial_configuration_fragment_basal_title">Insulina basal</string>
+    <string name="initial_configuration_fragment_basal_breakfast">Dosis al desayuno</string>
+    <string name="initial_configuration_fragment_basal_lunch">Dosis a la comida</string>
+    <string name="initial_configuration_fragment_basal_dinner">Dosis a la cena</string>
+    <string name="initial_configuration_fragment_basal_confirmation">Finalizado. Esto refleja las dosis de insulina basal que me administro al cabo del día. (Si no usa insulina basal deje todo vacío) </string>
+
+    <string name="initial_configuration_fragment_correction_factor_title">Factor de corrección</string>
+    <string name="initial_configuration_fragment_correction_factor_message">Activando estas opciones Cafydia corregirá toda desviación de la glucosa antes de las comidas automáticamente.\n\nSi las usa, es imprescindible que en el paso anterior introduzca correctamente las dosis basales que acostumbra a usar a fin de que Cafydia calcule correctamente su Factor de Corrección.</string>
+    <string name="initial_configuration_fragment_correction_factor_activate_above">Activar corrección por arriba</string>
+    <string name="initial_configuration_fragment_correction_factor_activate_below">Activar corrección por abajo</string>
+
+
+    <string name="initial_configuration_fragment_tutorial_mode_title">Modo tutorial</string>
+    <string name="initial_configuration_fragment_tutorial_mode_message">Activado Cafydia iniciará en modo tutorial donde se le explicará cada una de las actividades de una manera breve y simple. Está recomendado</string>
+    <string name="initial_configuration_fragment_tutorial_mode_activate">Activar</string>
+    <string name="initial_configuration_fragment_tutorial_mode_message2">Puede reinicializar el Modo Tutorial desde el menú configuración de Cafydia en todo momento</string>
+
+    <string name="initial_configuration_fragment_finish_title">Enhorabuena</string>
+    <string name="initial_configuration_fragment_finish_message">Debe saber que es necesario introducir dos comidas diferentes para cada desayuno, comida y cena además de la glucosa de antes y después de cada comida para que Cafydia comience a generar recomendaciones.\n\nNo se preocupe de dar dosis correctas al inicio puesto que estas dosis serán modificadas automáticamente.</string>
+
+
+    <!-- ActivityMain -->
+    <string name="main_activity_main_menu_title">Menú principal</string>
+    <string name="main_activity_header_meals">COMIDAS</string>
+    <string name="main_activity_option_meal">Comidas y aperitivos</string>
+    <string name="main_activity_header_recommendations">RECOMENDACIONES</string>
+    <string name="main_activity_option_baseline">Línea base</string>
+    <string name="main_activity_option_metabolic_rhythms">Ritmos metabólicos</string>
+    <string name="main_activity_option_metabolic_rhythms2">Metabolic rhythms old</string>
+    <string name="main_activity_option_correctives">Correctives old</string>
+    <string name="main_activity_header_util">HERRAMIENTAS ÚTILES</string>
+    <string name="main_activity_option_build_the_charts">Construya sus gráficas</string>
+    <string name="main_activity_option_complex_food">Añada alimento complejo</string>
+
+    <!-- Rings -->
+    <string name="main_activity_ring_breakfast">Desayunos</string>
+    <string name="main_activity_ring_lunch">Comidas</string>
+    <string name="main_activity_ring_dinner">Cenas</string>
+
+
+    <string name="main_activity_option_glucose">Añade una glucosa</string>
+    <string name="main_activity_option_settings">Configuración</string>
+    <string name="main_activity_option_welcome">Bienvenida</string>
+    <string name="main_activity_option_about">Sobre Cafydia Diabetes</string>
+    <string name="main_activity_option_suggestion">¡Queremos escucharle!</string>
+    <string name="main_activity_option_suggestion_subject">Sugerencia</string>
+
+
+    <string name="main_activity_functions_not_generated_yet">Funciones no generadas aún. Añada más comidas, por favor</string>
+    <string name="main_activity_hba1c">HbA1c</string>
+    <string name="main_activity_glucoses_last_month">Último mes</string>
+    <string name="main_activity_percent">%</string>
+    <string name="main_activity_mmol">mmol/mol</string>
+    <string name="main_activity_status_hba1c_very_good">¡Muy bien! Sus niveles de glucosa son excelentes</string>
+    <string name="main_activity_status_hba1c_good">Sus niveles de glucosa son casi perfectos. A pesar de ello, ¡intente mejorarlos un poco más!</string>
+    <string name="main_activity_status_hba1c_not_quite_well">Sus niveles de glucosa no son los deseados. Intente realizar ajustes ¡Mucho Ánimo!</string>
+    <string name="main_activity_status_hba1c_bad">Sus niveles de glucosa comienzan a ser preocupantes. Necesita realizar cambios</string>
+    <string name="main_activity_status_hba1c_very_bad">Sus niveles de glucosa son alarmantes. Acuda a su médico</string>
+    <string name="main_activity_status_hba1c_no_data">No hay datos aún. Pruebe a añadir una nueva glucemia</string>
+
+    <string name="main_activity_welcome_title_morning">¡Buenos días!</string>
+    <string name="main_activity_welcome_title_afternoon">¡Buenas tardes!</string>
+    <string name="main_activity_welcome_title_night">¡Buenas noches!</string>
+    <string name="main_activity_welcome_message">
+        <![CDATA[
+        <h4>Encantado de darle la bienvenida a Cafydia.</h4>
+
+        Cafydia le ayudará generando recomendaciones sobre la insulina a administrar para cada comida, y también le ayudará a conocer su diabetes, verá cómo su cuerpo responde a la insulina que se administra, qué niveles de HbA1c va consiguiendo, etc.<br/><br/>
+
+        Para más información visite:<br/><br/>
+
+        <b>http://www.cafydia.org/</b><br/><br/>
+
+        Para cualquier sugerencia que desee hacer escríbame un correo a la dirección:<br/><br/>
+
+        <b>mcollado@cafydia.org</b><br/><br/>
+
+        Miguel Collado
+        ]]>
+    </string>
+
+
+    <string name="main_activity_about_title">Sobre Cafydia Diabetes</string>
+    <string name="main_activity_about_message">
+        <![CDATA[
+        <b>Cafydia</b> es el acrónimo de <b>Computerized Assistant For Your Diabetes.</b><br/><br/>
+
+        Se trata del resultado de un proyecto personal fruto de la investigación y análisis, en el que se implementan todas las herramientas que podrían necesitarse para poder predecir con exactitud qué dosis de insulina administrar en una determinada comida.<br/><br/>
+
+        Este proyecto jamás hubiese salido a la luz sin la inestimable guía de <b><em>Daniel Hernández Cassel</em></b>, ni las tormentas de ideas, paciencia, y sabios consejos de <b><em>Maria Teresa Ortube Valbuena</em></b>. ¡Gracias!<br/><br/>
+
+        Miguel Collado
+        ]]>
+    </string>
+
+
+
+    <!-- GlucoseDialogFragment -->
+    <string name="glucose_dialog_label">Nueva glucemia</string>
+    <string name="glucose_dialog_time">Momento</string>
+    <string name="glucose_dialog_date_and_time">Fecha y hora</string>
+    <string name="glucose_dialog_level">Nivel</string>
+    <string name="glucose_positive_button">OK</string>
+    <string name="glucose_negative_button">Cancelar</string>
+    <string name="glucose_dialog_empty_level">No ha especificado nivel</string>
+    <string name="glucose_dialog_error_level_too_high">El nivel especificado es demasiado alto</string>
+    <string name="glucose_dialog_error_future_instant">¡No puede añadir tests de glucosa en el futuro!</string>
+
+
+    <string name="activity_actionbar_button_done">Hecho</string>
+    <string name="activity_actionbar_button_help">Ayuda</string>
+
+
+    <!-- ActivityMeals -->
+    <string name="meals_activity_time">MOMENTO</string>
+    <string name="meals_activity_food_selected">ALIMENTOS SELECCIONADOS</string>
+    <string name="meals_activity_label">Toma una comida</string>
+    <string name="meals_activity_label_snack">Toma un aperitivo</string>
+    <string name="meals_activity_baseline_preprandial">PREPRANDIAL</string>
+    <string name="meals_activity_baseline_basal">BASAL</string>
+    <string name="meals_activity_baseline_new">NUEVA</string>
+    <string name="meals_activity_baseline">LÍNEA BASE</string>
+    <string name="meals_activity_beginnings">COMIENZOS</string>
+    <string name="meals_activity_correctives">CORRECTIVOS</string>
+    <string name="meals_activity_correction_factor">FACTOR DE CORRECCIÓN</string>
+    <string name="meals_activity_correction_factor_low_case">Factor de corrección</string>
+    <string name="meals_activity_correction_factor_glucose_bb">Glucosa antes del desayuno</string>
+    <string name="meals_activity_correction_factor_glucose_bl">Glucosa antes de la comida</string>
+    <string name="meals_activity_correction_factor_glucose_bd">Glucosa antes de la cena</string>
+    <string name="meals_activity_carbohydrates">CARBOHIDRATOS</string>
+    <string name="meals_activity_preprandial">Preprandial</string>
+    <string name="meals_activity_preprandial_caps">PREPRANDIAL</string>
+    <string name="meals_activity_basal">Basal</string>
+    <string name="meals_activity_basal_caps">BASAL</string>
+    <string name="meals_activity_switch_meal">Comida</string>
+    <string name="meals_activity_switch_snack">Aperitivo</string>
+
+    <string name="meals_activity_option_add_carbohydrates">Añada carbohidratos</string>
+    <string name="meals_activity_option_take_average_meal">Tome una comida media</string>
+    <string name="meals_activity_carbohydrates_food">Carbohidratos</string>
+    <string name="meals_activity_average_not_calculated_yet">Media de carbohidratos no calculado aún</string>
+
+    <string name="meals_activity_strict_mode_activated_not_in_range">El Modo Estricto está activado y la comida no está en el rango</string>
+
+    <!-- Dialog Message -->
+    <string name="dialog_message_not_show_again">No volver a mostrar</string>
+    <string name="dialog_message_ok_button">OK</string>
+
+
+    <!-- Dialog Meal Finished -->
+    <string name="dialog_meal_finished_recommendation_generated">Guardar recomendación</string>
+    <string name="dialog_meal_finished_last_recommendation">Última recomendación</string>
+    <string name="dialog_meal_finished_insufficient_data">Datos insuficientes</string>
+    <string name="dialog_meal_finished_breakfast_details">Detalles desayuno</string>
+    <string name="dialog_meal_finished_lunch_details">Detalles comida</string>
+    <string name="dialog_meal_finished_dinner_details">Detalles cena</string>
+    <string name="dialog_meal_finished_preprandial">PREPR</string>
+    <string name="dialog_meal_finished_basal">BASAL</string>
+    <string name="dialog_meal_finished_ok_button">OK</string>
+    <string name="dialog_meal_finished_alert_glucose_after_meal_120">Notificación en dos horas para añadir glucosa</string>
+    <string name="dialog_meal_finished_alert_glucose_after_meal_105">Notificación en hora y 45 minutos para añadir glucosa</string>
+    <string name="dialog_meal_finished_alert_glucose_after_meal_90">Notificación en hora y media para añadir glucosa</string>
+    <string name="dialog_meal_finished_alert_title">Cafydia</string>
+    <string name="dialog_meal_finished_alert_message">Recordatorio para test de glucosa</string>
+    <string name="dialog_meal_finished_insufficient_data_toast">Debe especificar la dosis de forma manual</string>
+    <string name="dialog_meal_finished_new_meal_added">Nueva comida añadida a la base de datos</string>
+
+
+    <!-- Activity Baseline -->
+    <string name="activity_baseline_label">Línea base</string>
+    <string name="activity_baseline_modify_for_all_meals">Todas las comidas</string>
+    <string name="activity_baseline_modify_for_only_copious_meals">Sólo comidas copiosas</string>
+    <string name="activity_baseline_modify_for_only_light_meals">Sólo comidas ligeras</string>
+    <string name="activity_baseline_action_button_done">Hecho</string>
+    <string name="activity_baseline_action_button_meal_info">Información de comida</string>
+    <string name="activity_baseline_save_changes_title">Guardar cambios</string>
+    <string name="activity_baseline_save_changes_message">¿Realmente desea guardar los cambios en la línea base? Esto va a cambiar todas las recomendaciones sobre la comida seleccionada</string>
+    <string name="activity_baseline_confirmation_minimum_title">Mínima preprandial</string>
+    <string name="activity_baseline_confirmation_minimum_message">Si continúa, establecerá una dosis mínima preprandial en la comida actual. Ésta será la dosis mínima recomendada, si la suma de la línea base y los modificadores quedan por debajo de dicha mínima.</string>
+    <string name="activity_baseline_establish_minimum_title">Establecer mínima</string>
+
+
+    <!-- BASELINE GENERATE VALIDATE DIALOG -->
+    <string name="dialog_generate_validate_preprandial_title_breakfast">Línea Base desayuno</string>
+    <string name="dialog_generate_validate_preprandial_title_lunch">Línea Base comida</string>
+    <string name="dialog_generate_validate_preprandial_title_dinner">Línea Base cena</string>
+    <string name="dialog_generate_validate_preprandial_generated">Generada</string>
+    <string name="dialog_generate_validate_preprandial_validated">Validada</string>
+
+    <string name="dialog_generate_validate_preprandial_requirement">Para validar la Línea Base es necesario dos comidas con una diferencia de 30gr / 1.05oz / 0.066lb de carbohidratos entre ellas y glucosas antes y después de cada una.</string>
+    <string name="dialog_generate_validate_preprandial_breakfast_midweek_data">Dos desayunos entresemana y sus glucosas</string>
+    <string name="dialog_generate_validate_preprandial_breakfast_weekend_data">Dos desayunos en fin de semana y sus glucosas</string>
+    <string name="dialog_generate_validate_preprandial_lunch_midweek_data">Dos comidas entresemana y sus glucosas</string>
+    <string name="dialog_generate_validate_preprandial_lunch_weekend_data">Dos comidas en fin de semana y sus glucosas</string>
+    <string name="dialog_generate_validate_preprandial_dinner_midweek_data">Dos cenas entresemana y sus glucosas</string>
+    <string name="dialog_generate_validate_preprandial_dinner_weekend_data">Dos cenas en fin de semana y sus glucosas</string>
+
+
+    <!-- LinearFunctionView Strings -->
+    <string name="linear_function_view_x_label">Carbohidratos</string>
+    <string name="linear_function_view_y_label">Dosis base</string>
+    <string name="linear_function_view_average">Media</string>
+
+
+    <!-- Activity Snack Calculator -->
+    <string name="snack_activity_dialog_title">Finalizar el aperitivo</string>
+    <string name="snack_activity_dialog_message">¿Desea finalizar seleccionando alimentos para el aperitivo?</string>
+    <string name="snack_activity_dialog_yes">Sí</string>
+    <string name="snack_activity_dialog_no">No</string>
+    <string name="snack_activity_limit_reached">Límite alcanzado</string>
+    <string name="snack_activity_no_quantity">No ha especificado cantidad de carbohidratos aún</string>
+
+
+    <!-- Activity Complex Food -->
+    <string name="complex_food_activity_title">Añada alimento complejo</string>
+    <string name="complex_food_activity_name_title">NOMBRE</string>
+    <string name="complex_food_activity_name_hint">Nombre del alimento</string>
+    <string name="complex_food_activity_total_weight_title">PESO TOTAL</string>
+    <string name="complex_food_activity_carbohydrate_percentage">PORCENTAJE DE CARBOHIDRATOS</string>
+    <string name="complex_food_activity_dialog_title">Finalizar añadido</string>
+    <string name="complex_food_activity_dialog_message">¿Desea finalizar añadiendo el alimento complejo a la base de datos?</string>
+    <string name="complex_food_activity_dialog_yes">Sí</string>
+    <string name="complex_food_activity_dialog_no">No</string>
+    <string name="complex_food_activity_new_food_added">Nuevo alimento añadido a la base de datos</string>
+
+
+    <!-- Food Fragment -->
+    <string name="food_fragment_actionbar_title">Panel de alimentos</string>
+    <string name="food_fragment_search_hint">Filtrar por nombre</string>
+    <string name="food_fragment_search_hint_search">Búsquedas</string>
+    <string name="food_fragment_single_view_title_search">INTERNET</string>
+    <string name="food_fragment_single_view_title_food">NORMALES</string>
+    <string name="food_fragment_single_view_title_favorite_food">FAVORITOS</string>
+    <string name="food_fragment_single_view_title_complex_food">COMPLEJOS</string>
+    <string name="food_fragment_menu_add_food">Añadir alimento</string>
+    <string name="food_fragment_no_results">Ningún resultado</string>
+    <string name="food_fragment_no_food_added_yet">Ningún alimento añadido aún</string>
+    <string name="food_fragment_no_search_made">Ninguna búsqueda realizada aún</string>
+    <string name="food_fragment_no_internet_connection">Sin conexión a Internet</string>
+    <string name="food_fragment_no_bedca">BEDCA parece estar offline</string>
+    <string name="context_menu_search_add">Añadir el alimento en local</string>
+    <string name="context_menu_food_mark_as_favorite">Marcar como favorito</string>
+    <string name="context_menu_food_edit">Editar alimento</string>
+    <string name="context_menu_food_delete">Eliminar alimento</string>
+    <string name="context_menu_favorite_mark_as_no_favorite">Marcar como no favorito</string>
+    <string name="context_menu_favorite_edit">Editar alimento</string>
+    <string name="context_menu_favorite_delete">Eliminar alimento</string>
+    <string name="context_menu_complex_edit">Editar alimento</string>
+    <string name="context_menu_complex_delete">Eliminar alimento</string>
+
+    <!-- ListView elements Food Panel & Food Selected Panel -->
+    <string name="food_fragment_food_element_carbohydrate_percentage">% de HC:</string>
+    <string name="food_selected_fragment_food_element_weight">Peso:</string>
+    <string name="food_selected_fragment_food_element_units">Unidades:</string>
+    <string name="food_selected_fragment_food_element_carbohydrate_weight">HC:</string>
+
+    <string name="dialog_selecting_food_title">Seleccione peso</string>
+    <string name="dialog_selecting_food_fragment_name_title">Nombre</string>
+    <string name="dialog_selecting_food_fragment_weight_title">Peso</string>
+    <string name="dialog_selecting_food_select">OK</string>
+    <string name="dialog_selecting_food_cancel">Cancelar</string>
+    <string name="dialog_selecting_food_units_title">Unidades</string>
+    <string name="dialog_selecting_food_units_unit">Unidades</string>
+    <string name="dialog_selecting_food_maximum_selectable">Máx. seleccionable:</string>
+
+    <string name="dialog_food_editor_title">Editor de alimentos</string>
+    <string name="dialog_food_editor_button_ok">OK</string>
+    <string name="dialog_food_editor_button_cancel">Cancelar</string>
+    <string name="dialog_food_editor_name">Nombre</string>
+    <string name="dialog_food_editor_carbohydrates">Porcentaje de hidratos</string>
+    <string name="dialog_food_editor_weight_for_unit">Peso por unidad (Opcional)</string>
+
+    <string name="action_dialog_button_ok">OK</string>
+    <string name="action_dialog_button_cancel">Cancelar</string>
+
+
+    <!-- Recommendation Details Fragment -->
+    <string name="recommendation_details_fragment_actionbar_title">Detalles recomendación</string>
+    <string name="recommendation_details_fragment_correction_factor_target">Objetivo</string>
+    <string name="recommendation_details_fragment_correction_factor_current">Actual</string>
+    <string name="recommendation_details_fragment_correction_factor_correction_factor">Factor de corrección</string>
+    <string name="recommendation_details_fragment_correction_factor_modification">Modificación</string>
+
+
+    <!-- Food Selected Fragment -->
+    <string name="food_selected_fragment_title">ALIMENTOS SELECCIONADOS</string>
+    <string name="food_selected_unit_unit">unidad</string>
+    <string name="food_selected_unit_units">unidades</string>
+    <string name="food_selected_context_menu_edit_selection">Editar</string>
+    <string name="food_selected_context_menu_remove_selection">Eliminar</string>
+    <string name="food_selected_dialog_button_ok">OK</string>
+    <string name="food_selected_dialog_button_cancel">Cancelar</string>
+    <string name="food_selected_fragment_no_selection">Ninguna selección</string>
+    <string name="food_selected_actionbar_title">Alimentos seleccionados</string>
+
+    <!-- Preferences -->
+    <string name="preferences_activity_title">Configuración</string>
+
+    <string name="preference_screen_title_units">Unidades</string>
+    <string name="preference_screen_title_meals">Comidas y recomendaciones</string>
+    <string name="preference_screen_title_annotations">Anotaciones</string>
+    <string name="preference_screen_title_labels">Etiquetas</string>
+    <string name="preference_category_title_units">Unidades</string>
+
+    <string name="pref_units_weight_title">Para el peso</string>
+    <string name="pref_units_weight_dialog_title">Seleccione unidad para el peso</string>
+
+    <string name="pref_units_glucose_title">Para las glucemias</string>
+    <string name="pref_units_glucose_dialog_title">Seleccione unidades para las glucemias</string>
+
+    <string name="pref_glucose_category_title">Test de glucosa</string>
+    <string name="pref_glucose_time_after_meal">Aviso después de comida</string>
+
+    <string name="pref_correction_factor_title">Factor de corrección</string>
+    <string name="pref_correction_factor_configure">Configurar</string>
+    <string name="pref_correction_factor_above_activate_title">Corrige glucosas por encima</string>
+    <string name="pref_correction_factor_above_activate_edittext_title">Valor</string>
+    <string name="pref_correction_factor_below_activate_title">Corrige glucosas por debajo</string>
+    <string name="pref_correction_factor_below_activate_edittext_title">Valor</string>
+    <string name="pref_correction_factor_summary">Toda desviación en la glucosa desde 100mg/dL o 5.5 mmol/L antes de las comidas será corregida. ¡Atención! es imprescindible que la insulina usada como insulina basal, si la usa, sea introducida adecuadamente en el menú de la línea base.</string>
+
+    <string name="pref_meal_hours_title">Hora de comidas</string>
+    <string name="pref_meal_hours_choose_minutes_of_range">Seleccione minutos de rango</string>
+
+    <string name="pref_meal_hours_notify_strict_mode_title">Modo estricto</string>
+    <string name="pref_meal_hours_notify_strict_mode_summary">Si la comida está fuera de rango Cafydia Diabetes no le permitirá introducir la comida</string>
+
+    <string name="pref_meal_hours_notify_if_correct_meal_hour">Notificar dentro de rango</string>
+    <string name="pref_meal_hours_notify_if_correct_meal_hour_summary">Será notificado de los minutos que faltan para llegar al rango, o si está en él, los minutos que faltan para que acabe</string>
+
+    <string name="pref_meal_hours_notify_ten_minutes_before_limit">Notificar hora límite</string>
+    <string name="pref_meal_hours_notify_ten_minutes_before_limit_summary">Será notificado diez minutos antes de que una comida exceda la hora límite del rango</string>
+
+    <string name="pref_automatic_annotations">Anotaciones automáticas</string>
+    <string name="pref_automatic_annotations_preprandial_baseline_changes">Cambios en preprandial</string>
+    <string name="pref_automatic_annotations_basal_baseline_changes">Cambios en basal</string>
+    <string name="pref_automatic_annotations_corrective_changes">Cambios en correctivos</string>
+    <string name="pref_automatic_annotations_metabolic_rhythm_activation">Activación de R. Metabólico</string>
+    <string name="pref_automatic_annotations_title_default_action">Acción por defecto</string>
+    <string name="pref_automatic_annotations_annotation_added_toast">Nueva anotación añadida</string>
+
+    <string name="pref_automatic_labels">Etiquetas automáticas</string>
+    <string name="pref_automatic_labels_summary">Esto añadirá una nueva etiqueta en caso de no existir y añadirá el rango de fechas del Ritmo Metabólico programado que está siendo desactivado. No aplica para desactivaciones manuales</string>
+    <string name="pref_automatic_labels_title_default_action">Acción por defecto</string>
+    <string name="pref_automatic_labels_label_added_toast">Nuevo rango de fechas fue añadido a la etiqueta</string>
+
+    <string name="pref_advanced_title_category">Opciones avanzadas</string>
+    <string name="pref_advanced_function_parameters_in_baseline_chart_title">Parámetros de la función</string>
+    <string name="pref_advanced_function_parameters_in_baseline_chart_summary">Muestra los parámetros de la función en la gráfica de la línea base</string>
+    <string name="pref_advanced_hide_sections_no_modification_title">Oculta secciones</string>
+    <string name="pref_advanced_hide_sections_no_modification_summary">Oculta las secciones que no ofrecen modificación en las comidas</string>
+
+
+    <!-- Metabolic Rhythms Activity -->
+    <string name="metabolic_rhythms_activity_label">Ritmos metabólicos</string>
+
+    <!-- Metabolic List -->
+    <string name="metabolic_list_title">RITMOS METABÓLICOS</string>
+    <string name="metabolic_list_new">Nuevo</string>
+    <string name="metabolic_list_dialog_new_title">Nuevo Ritmo Metabólico</string>
+    <string name="metabolic_list_dialog_new_name_title">Especifique su nombre</string>
+    <string name="metabolic_list_dialog_new_ok_button">OK</string>
+    <string name="metabolic_list_dialog_new_cancel_button">Cancelar</string>
+    <string name="metabolic_list_contextual_menu_edit">Editar</string>
+    <string name="metabolic_list_contextual_menu_delete">Eliminar</string>
+    <string name="metabolic_list_dialog_delete_title">Eliminar el Ritmo Metabólico</string>
+    <string name="metabolic_list_dialog_delete_message">Esto eliminará el Ritmo Metabólico y además todo lo asociado a él, como correctivos, comienzos, programas, etc</string>
+
+    <!-- Metabolic Details -->
+    <string name="metabolic_details_general_information_title">GENERAL</string>
+    <string name="metabolic_details_name_title">NOMBRE</string>
+    <string name="metabolic_details_description_title">DESCRIPCIÓN</string>
+    <string name="metabolic_details_description_button_done">Hecho</string>
+    <string name="metabolic_details_description_text_view_hint">Toque para editar.</string>
+    <string name="metabolic_details_state_title">ESTADO</string>
+    <string name="metabolic_details_activated_title">Activado</string>
+    <string name="metabolic_details_modifiers">MODIFICADORES</string>
+    <string name="metabolic_details_modifiers_beginnings">Comienzos</string>
+    <string name="metabolic_details_modifiers_correctives">Correctivos</string>
+    <string name="metabolic_details_schedule">Programar</string>
+    <string name="metabolic_details_scheduling">PROGRAMACIÓN</string>
+    <string name="metabolic_details_scheduling_state">ESTADO</string>
+    <string name="metabolic_details_start_date_title">PRIMER DÍA</string>
+    <string name="metabolic_details_end_date_title">ÚLTIMO DÍA</string>
+    <string name="metabolic_details_date_in_use">El rango de fechas elegido está en uso por el Ritmo Metabólico</string>
+    <string name="metabolic_details_planned_cannot_disable">No se puede deshabilitar el Ritmo Metabólico. El actual está planificado y aplica</string>
+
+    <!-- Metabolic Beginnings List -->
+    <string name="metabolic_beginning_list_preprandial">Preprandial</string>
+    <string name="metabolic_beginning_list_basal">Basal</string>
+
+    <!-- Metabolic Beginnings Details -->
+    <string name="metabolic_beginning_details_beginnings_actionbar">Comienzos</string>
+    <string name="metabolic_beginning_details_days">Días pasados desde el comienzo</string>
+    <string name="metabolic_beginning_details_modification">Modificación</string>
+    <string name="metabolic_beginning_details_preprandial_title">COMIENZOS PREPRANDIAL</string>
+    <string name="metabolic_beginning_details_type_title">TIPO</string>
+    <string name="metabolic_beginning_details_global_radiobutton">Global</string>
+    <string name="metabolic_beginning_details_specific_radiobutton">Especifico</string>
+    <string name="metabolic_beginning_details_breakfast">DESAYUNO</string>
+    <string name="metabolic_beginning_details_lunch">COMIDA</string>
+    <string name="metabolic_beginning_details_dinner">CENA</string>
+    <string name="metabolic_beginning_details_basal_title">COMIENZOS BASAL</string>
+    <string name="metabolic_beginning_details_basal_breakfast">DESAYUNO</string>
+    <string name="metabolic_beginning_details_basal_lunch">COMIDA</string>
+    <string name="metabolic_beginning_details_basal_dinner">CENA</string>
+
+    <!-- Metabolic Correctives List -->
+    <string name="metabolic_correctives_list_no_correctives_added_yet">Ningún correctivo añadido aún</string>
+
+    <!-- Metabolic Correctives Details -->
+    <string name="metabolic_correctives_details_label">Correctivos</string>
+    <string name="metabolic_correctives_details_general_title">GENERAL</string>
+    <string name="metabolic_correctives_details_name">NOMBRE</string>
+    <string name="metabolic_correctives_details_description">DESCRIPCIÓN</string>
+    <string name="metabolic_correctives_details_description_hint">Toque para editar</string>
+    <string name="metabolic_correctives_details_description_done">Hecho</string>
+    <string name="metabolic_correctives_details_visible">VISIBILIDAD</string>
+    <string name="metabolic_correctives_details_type">TIPO</string>
+    <string name="metabolic_correctives_details_modification">MODIFICACIÓN</string>
+    <string name="metabolic_correctives_details_breakfast">MODIFICACIÓN DESAYUNOS</string>
+    <string name="metabolic_correctives_details_lunch">MODIFICACIÓN COMIDAS</string>
+    <string name="metabolic_correctives_details_dinner">MODIFICACIÓN CENAS</string>
+    <string name="metabolic_correctives_details_type_simple">Simple</string>
+    <string name="metabolic_correctives_details_type_complex">Complejo</string>
+    <string name="metabolic_correctives_details_modification_type_title">TIPO DE MODIFICACIÓN</string>
+    <string name="metabolic_correctives_details_modification_type_units">Unidades</string>
+    <string name="metabolic_correctives_details_modification_type_percentage">Porcentaje</string>
+    <string name="metabolic_correctives_details_visible_in_meal_menu">Visible en menú de comidas</string>
+    <string name="metabolic_correctives_details_plan_title">Programar</string>
+    <string name="metabolic_correctives_details_plan">PLAN</string>
+    <string name="metabolic_correctives_details_plan_monday">L</string>
+    <string name="metabolic_correctives_details_plan_tuesday">M</string>
+    <string name="metabolic_correctives_details_plan_wednesday">X</string>
+    <string name="metabolic_correctives_details_plan_thursday">J</string>
+    <string name="metabolic_correctives_details_plan_friday">V</string>
+    <string name="metabolic_correctives_details_plan_saturday">S</string>
+    <string name="metabolic_correctives_details_plan_sunday">D</string>
+    <string name="metabolic_correctives_details_plan_for_breakfast">PARA LOS DESAYUNOS</string>
+    <string name="metabolic_correctives_details_plan_for_lunch">PARA LAS COMIDAS</string>
+    <string name="metabolic_correctives_details_plan_for_dinner">PARA LAS CENAS</string>
+    <string name="metabolic_correctives_details_plan_for_day">PARA TODO EL DÍA</string>
+    <string name="metabolic_correctives_details_new_title">Nuevo correctivo</string>
+    <string name="metabolic_correctives_details_new_hint">Especifique su nombre</string>
+    <string name="metabolic_correctives_details_new_button_ok">OK</string>
+    <string name="metabolic_correctives_details_new_button_cancel">Cancelar</string>
+    <string name="metabolic_correctives_details_changes_saved_1">Los cambios en el correctivo</string>
+    <string name="metabolic_correctives_details_changes_saved_2">fueron guardados correctamente</string>
+    <string name="metabolic_correctives_details_corrective_deleted_1">El correctivo</string>
+    <string name="metabolic_correctives_details_corrective_deleted_2">fue eliminado correctamente</string>
+
+
+    <!-- LONG CLICK CHART MENU -->
+    <string name="long_click_chart_menu_add_dot">Añada un punto</string>
+    <string name="long_click_chart_menu_edit_dot">Edite un punto</string>
+    <string name="long_click_chart_menu_delete_dot">Elimine un punto</string>
+
+
+
+    <!-- DIALOG DOT EDITOR -->
+    <string name="dialog_dot_editor_title">Editor de puntos</string>
+    <string name="dialog_dot_editor_day">Día</string>
+    <string name="dialog_dot_editor_modification">Modificación</string>
+    <string name="dialog_dot_editor_positive_button">OK</string>
+    <string name="dialog_dot_editor_negative_button">Cancelar</string>
+
+    <!-- DIALOG DOT SELECTOR -->
+    <string name="dialog_dot_selector_title">Selecciona un punto</string>
+    <string name="dialog_dot_selector_day">Día</string>
+    <string name="dialog_dot_selector_modification">Modificación</string>
+    <string name="dialog_dot_selector_positive_button">OK</string>
+    <string name="dialog_dot_selector_negative_button">Cancelar</string>
+
+    <!-- CORRECTIVES -->
+
+
+
+    <!-- Activity Charts -->
+    <string name="activity_charts_label">Sus gráficas</string>
+    <string name="activity_charts_0_tab_hba1c">HbA1c</string>
+    <string name="activity_charts_current_hba1c">Actual</string>
+    <string name="activity_charts_insufficient_data">Datos insuficientes</string>
+    <string name="activity_charts_insufficient_data1">Para que pueda ver la progresión, aún se necesitan</string>
+    <string name="activity_charts_insufficient_data2">glucemias añadidas por</string>
+    <string name="activity_charts_insufficient_data3">días</string>
+    <string name="activity_charts_new_element">Nuevo elemento</string>
+    <string name="activity_charts_set_data_criteria">Criterio de datos en página</string>
+    <string name="activity_charts_delete_chart_page">Eliminar página</string>
+    <string name="activity_charts_move_to_left">Mover a izquierda</string>
+    <string name="activity_charts_move_to_right">Mover a derecha</string>
+    <string name="activity_charts_change_title">Cambiar título</string>
+    <string name="activity_charts_cannot_change_or_delete_first_page">No puede cambiar ni eliminar la primera página</string>
+    <string name="activity_charts_loading_message">Cargando datos &#8230;</string>
+    <string name="activity_charts_no_criteria">No hay seleccionado un criterio de datos</string>
+    <string name="activity_charts_linear_regression">Regresión lineal</string>
+    <string name="activity_charts_polynomial_regression_grade_2">Regresión polinómica grado 2</string>
+    <string name="activity_charts_polynomial_regression_grade_3">Regresión polinómica grado 3</string>
+    <string name="activity_charts_glucose_max">Máx</string>
+    <string name="activity_charts_glucose_min">Mín</string>
+
+    <string name="activity_charts_annotations">ANOTACIONES</string>
+    <string name="activity_charts_labels">ETIQUETAS</string>
+
+    <string name="charts_contextual_menu_annotation_edit">Editar anotación</string>
+    <string name="charts_contextual_menu_annotation_delete">Eliminar anotación</string>
+
+    <string name="charts_contextual_menu_label_edit">Editar etiqueta</string>
+    <string name="charts_contextual_menu_label_delete">Eliminar etiqueta</string>
+
+
+
+
+    <!-- Dialog New Chart Element -->
+    <string name="dialog_new_chart_element_title">Nuevo elemento</string>
+
+    <string name="dialog_new_chart_element_page_added">La nueva página fue añadida al final</string>
+    <string name="dialog_new_chart_element_text_title">¿Qué texto?</string>
+
+    <!-- Dialog new ChartPage -->
+    <string name="dialog_new_chart_page_title">Nueva página</string>
+    <string name="dialog_new_chart_page_name_hint">Nombre</string>
+    <string name="dialog_new_chart_page_button_ok">OK</string>
+
+    <!-- Dialog delete ChartPage -->
+    <string name="dialog_delete_chart_page_title">Eliminar página</string>
+    <string name="dialog_delete_chart_page_message">Esto eliminará todas las anotaciones cuyo alcance aplique sólo en esta página y todas las gráficas en ella.</string>
+    <string name="dialog_delete_chart_page_button_ok">Eliminar</string>
+    <string name="dialog_delete_chart_page_button_cancel">Cancelar</string>
+
+    <!-- Contextual menu chart page element text -->
+    <string name="contextual_menu_chart_page_element_text_edit_text">Editar texto</string>
+    <string name="contextual_menu_chart_page_element_text_delete">Eliminar</string>
+    <!-- Contextual menu chart page element Chart -->
+    <string name="contextual_menu_chart_page_element_chart_criteria">Criterio de datos</string>
+    <string name="contextual_menu_chart_page_element_chart_statistical_objects">Estadisticas</string>
+    <string name="contextual_menu_chart_page_element_chart_delete">Eliminar</string>
+
+    <!-- Chart Type Dialog -->
+    <string name="dialog_select_chart_type_title">Selecciona tipo de gráfica</string>
+
+
+    <!-- Dialog DataCollectionCriteria Editor -->
+    <string name="dialog_data_collection_criteria_editor_title">Criterio de datos</string>
+    <string name="dialog_data_collection_criteria_editor_since">Desde</string>
+    <string name="dialog_data_collection_criteria_editor_until">Hasta</string>
+    <string name="dialog_data_collection_criteria_editor_day_weeks">Días de la semana</string>
+    <string name="dialog_data_collection_criteria_editor_times">Momentos</string>
+    <string name="dialog_data_collection_criteria_editor_label_rules">Etiquetas</string>
+    <string name="dialog_data_collection_criteria_editor_label_rules_include">Incluye</string>
+    <string name="dialog_data_collection_criteria_editor_label_rules_exclude">Excluye</string>
+
+    <string name="dialog_data_collection_criteria_editor_since_can_not_be_before_until">Desde no puede ser posterior al Hasta</string>
+
+    <string name="dialog_data_collection_criteria_editor_monday">Lu</string>
+    <string name="dialog_data_collection_criteria_editor_tuesday">Ma</string>
+    <string name="dialog_data_collection_criteria_editor_wednesday">Mi</string>
+    <string name="dialog_data_collection_criteria_editor_thursday">Ju</string>
+    <string name="dialog_data_collection_criteria_editor_friday">Vi</string>
+    <string name="dialog_data_collection_criteria_editor_saturday">Sa</string>
+    <string name="dialog_data_collection_criteria_editor_sunday">Do</string>
+
+    <string name="dialog_data_collection_criteria_editor_before_breakfast">Pre desayuno</string>
+    <string name="dialog_data_collection_criteria_editor_after_breakfast">Post desayuno</string>
+    <string name="dialog_data_collection_criteria_editor_before_lunch">Pre comida</string>
+    <string name="dialog_data_collection_criteria_editor_after_lunch">Post comida</string>
+    <string name="dialog_data_collection_criteria_editor_before_dinner">Pre cena</string>
+    <string name="dialog_data_collection_criteria_editor_after_dinner">Post cena</string>
+    <string name="dialog_data_collection_criteria_editor_in_the_night">En la noche</string>
+
+    <string name="dialog_data_collection_criteria_editor_button_ok">OK</string>
+    <string name="dialog_data_collection_criteria_editor_button_cancel">Cancelar</string>
+
+    <string name="dialog_data_collection_criteria_editor_contextual_edit">Editar etiqueta</string>
+    <string name="dialog_data_collection_criteria_editor_contextual_delete_from_list">Eliminar de la lista</string>
+
+    <!-- Dialog Statistical Object -->
+    <string name="dialog_statistical_object_title">Selecciona qué representar</string>
+    <string name="dialog_statistical_object_button_ok">OK</string>
+
+    <!-- Data Collection Cr5iteria Instant -->
+    <string name="data_collection_criteria_instant_days_ago">días atrás</string>
+    <string name="data_collection_criteria_instant_the_origin_the_ages">El origen de los tiempos</string>
+    <string name="data_collection_criteria_instant_today">Hoy</string>
+    <string name="data_collection_criteria_dayweeks">Días de la semana</string>
+    <string name="data_collection_criteria_times">Momentos</string>
+    <string name="data_collection_criteria_include_labels">Etiquetas incluidas:</string>
+    <string name="data_collection_criteria_exclude_labels">Etiquetas excluidas:</string>
+    <string name="data_collection_criteria_no_labels_specified">Sin etiquetas especificadas</string>
+
+
+    <!-- Annotations -->
+    <string name="dialog_add_annotation_title">Añadir anotación</string>
+    <string name="dialog_add_annotation_date">Fecha</string>
+    <string name="dialog_add_annotation_scope">Alcance</string>
+    <string name="dialog_add_annotation_scope_global">Global</string>
+    <string name="dialog_add_annotation_scope_specific">Sólo para esta página</string>
+    <string name="dialog_add_annotation_text">Anotación</string>
+    <string name="dialog_add_annotation_button_ok">OK</string>
+    <string name="dialog_add_annotation_button_cancel">Cancelar</string>
+
+    <string name="dialog_automatic_annotation_title">Anotación</string>
+    <string name="dialog_automatic_annotation_message">¿Desea añadir la siguiente anotación automática?</string>
+    <string name="dialog_automatic_annotation_button_ok">Añadir</string>
+    <string name="dialog_automatic_annotation_button_cancel">Cancelar</string>
+
+    <string name="dialog_automatic_label_title">Etiqueta</string>
+    <string name="dialog_automatic_label_message">¿Desea añadir la siguiente etiqueta automática?</string>
+    <string name="dialog_automatic_label_message_new_label">Nueva etiqueta</string>
+    <string name="dialog_automatic_label_message_new_range">Nuevo rango de fechas</string>
+    <string name="dialog_automatic_label_button_ok">Añadir</string>
+    <string name="dialog_automatic_label_button_cancel">Cancelar</string>
+
+    <string name="automatic_annotation_old">Antiguo</string>
+    <string name="automatic_annotation_new">Nuevo</string>
+    <string name="automatic_annotation_preprandial_baseline_change">Cambio en línea base preprandial</string>
+    <string name="automatic_annotation_basal_baseline_change">Cambio en línea base basal</string>
+    <string name="automatic_annotation_corrective_change">Cambio en correctivo</string>
+    <string name="automatic_annotation_metabolic_rhythm_activation">Activación de ritmo metabólico</string>
+
+    <!-- Labels -->
+    <string name="dialog_add_label_title">Añadir etiqueta</string>
+    <string name="dialog_add_label_name">Nombre</string>
+    <string name="dialog_add_label_date_ranges">Rangos de fecha</string>
+    <string name="dialog_add_label_button_ok">OK</string>
+    <string name="dialog_add_label_button_cancel">Cancelar</string>
+    <string name="dialog_add_label_need_to_be_saved">La etiqueta aún no fue guardada. Guárdela primero.</string>
+
+    <!-- Label Ranges -->
+    <string name="dialog_add_label_range_title">Rango de fechas</string>
+    <string name="dialog_add_label_range_start_date">Fecha de inicio</string>
+    <string name="dialog_add_label_range_end_date">Fecha de fin</string>
+    <string name="dialog_add_label_range_button_ok">OK</string>
+    <string name="dialog_add_label_range_button_cancel">Cancelar</string>
+
+    <string name="dialog_add_label_range_context_menu_edit">Editar</string>
+    <string name="dialog_add_label_range_context_menu_delete">Eliminar</string>
+
+    <!-- Color Picker Dialog -->
+
+    <!-- Dialog Date Picker -->
+    <string name="dialog_date_picker_title">Seleccione fecha</string>
+    <string name="dialog_date_picker_button_ok">OK</string>
+    <string name="dialog_date_picker_button_cancel">Cancelar</string>
+
+    <!-- ModificationStartView -->
+
+    <!-- Dialog Get Text -->
+    <string name="dialog_get_text_button_ok">OK</string>
+    <string name="dialog_get_text_button_cancel">Cancelar</string>
+
+    <!-- Dialog Confirmation -->
+    <string name="dialog_confirmation_button_ok">OK</string>
+    <string name="dialog_confirmation_button_cancel">Cancelar</string>
+
+    <string name="dialog_confirmation_delete_annotation_title">Eliminar anotación</string>
+    <string name="dialog_confirmation_delete_annotation_message">¿Está seguro de eliminar la anotación seleccionada?</string>
+
+    <string name="dialog_confirmation_delete_label_title">Eliminar etiqueta</string>
+    <string name="dialog_confirmation_delete_label_message">¿Está seguro de eliminar la etiqueta y todos los rangos de fecha que contiene?</string>
+
+    <string name="dialog_confirmation_delete_chart_page_element_title">Eliminar elemento de página</string>
+    <string name="dialog_confirmation_delete_chart_page_element_message">¿Está seguro de eliminar el elemento de la página seleccionado?</string>
+
+    <string name="dialog_confirmation_delete_date_range_title">Eliminar rango de fechas</string>
+    <string name="dialog_confirmation_delete_date_range_message">¿Está seguro de eliminar el rango de fechas seleccionado?</string>
+
+    <!-- Dialog Time Picker -->
+    <string name="dialog_time_picker_title">Seleccione hora</string>
+    <string name="dialog_time_picker_button_ok">OK</string>
+    <string name="dialog_time_picker_button_cancel">Cancelar</string>
+
+    <!-- Dialog Select Label -->
+    <string name="dialog_select_label_title">Seleccione una etiqueta</string>
+
+    <!-- Chart View -->
+    <string name="chart_view_criteria_since">Desde</string>
+    <string name="chart_view_criteria_until">Hasta</string>
+
+
+    <!-- Notification for Meal Alarm Receiver -->
+    <string name="meal_hour_limit_exceeded_title_br">Hora desayuno</string>
+    <string name="meal_hour_limit_exceeded_title_lu">Hora comida</string>
+    <string name="meal_hour_limit_exceeded_title_di">Hora cena</string>
+    <string name="meal_hour_limit_exceeded_message">10 minutos hasta el límite</string>
+
+    <!-- In MEALS AND SNACKS activity for Hours Limits -->
+    <string name="meal_hour_limit_missing">Faltan</string>
+    <string name="meal_hour_limit_minutes">minutos</string>
+    <string name="meal_hour_limit_hours">horas</string>
+    <string name="meal_hour_limit_disabled">Deshabilitado</string>
+
+    <string name="switch_yes">SÍ</string>
+    <string name="switch_not">NO</string>
+
+    <!-- Glucose Ring Chart -->
+    <string name="glucose_ring_chart_title">Detalles</string>
+    <string name="glucose_ring_chart_message_total">Total</string>
+    <string name="glucose_ring_chart_message_low">0mg/dL - 60mg/dL</string>
+    <string name="glucose_ring_chart_message_good">60mg/dL - 150mg/dL</string>
+    <string name="glucose_ring_chart_message_regular">150mg/dL - 180mg/dL</string>
+    <string name="glucose_ring_chart_message_bad">180mg/dL - 600mg/dL</string>
+    <string name="glucose_ring_chart_button_ok">OK</string>
+
+
+    <!-- Chart Page Element Chart View Ring Summary -->
+    <string name="glucose_low">Bajo</string>
+    <string name="glucose_good">Bueno</string>
+    <string name="glucose_regular">Alto</string>
+    <string name="glucose_bad">Muy alto</string>
+    <string name="glucose_total">Total</string>
+
+    <string name="glucose_ring_breakfast">desayunos</string>
+    <string name="glucose_ring_lunch">comidas</string>
+    <string name="glucose_ring_dinner">cenas</string>
+
+
+    <!-- Button in Preferences that reset de Tutorial Mode and activate it -->
+    <string name="button_preference_reset_tutorial_mode_title">Reiniciar en modo tutorial</string>
+    <string name="button_preference_reset_tutorial_mode_key">button_preference_reset_tutorial_mode</string>
+    <string name="button_preference_reset_tutorial_mode_summary">Esto reinicia la app y activa el modo tutorial en Cafydia</string>
+    <string name="generic_dialog_confirmation_tutorial_mode_title">Reiniciar en modo tutorial</string>
+    <string name="generic_dialog_confirmation_tutorial_mode_message">Esto reinicia la app y activa el modo tutorial en Cafydia ¿Está seguro?</string>
+    <string name="tutorial_mode_activated_again">El modo tutorial fue activado de nuevo</string>
+
+    <!-- Help Fragments -->
+    <string name="help_fragment_meals_and_snacks">
+
+    </string>
+
+    <!-- Help Fragments Bundles -->
+    <string name="help_fragment_easy_meals_1">Seleccione la comida o aperitivo que desee tomar</string>
+    <string name="help_fragment_easy_meals_2_food_panel">En comidas, aquí tiene el panel de alimentos</string>
+    <string name="help_fragment_easy_meals_2_recommendation_panel">Y el panel de detalles de la recomendación</string>
+    <string name="help_fragment_easy_meals_3_final_recommendation">La recomendación final será mostrada aquí</string>
+    <string name="help_fragment_easy_meals_3_save_meal">No olvide terminar guardando la comida para posteriores análisis y reportes</string>
+    <string name="help_fragment_easy_meals_4_food_panel">En aperitivos, sólo es mostrado el panel de alimentos</string>
+    <string name="help_fragment_easy_meals_5_amount_carbohydrates">Puede establecer la cantidad de carbohidratos que deseará comer. Quedará memorizado</string>
+
+    <string name="help_fragment_easy_meals_6_snacks_1">Al seleccionar alimentos, toda la cantidad de carbohidratos faltantes serán completados con el alimento seleccionado</string>
+    <string name="help_fragment_easy_meals_6_snacks_2">Si no desea un solo alimento, corrija reduciendo el peso y seleccione el siguiente alimento</string>
+    <string name="help_fragment_easy_meals_6_snacks_3">Siempre toda la cantidad faltante de carbohidratos será completada con el siguiente alimento seleccionado</string>
+
+    <string name="help_fragment_easy_food_panel_1">En el panel de alimentos encontrará cuatro pestañas que son:</string>
+    <string name="help_fragment_easy_food_panel_food">Alimentos</string>
+    <string name="help_fragment_easy_food_panel_favorite_food">Alimentos favoritos</string>
+    <string name="help_fragment_easy_food_panel_complex_food">Alimentos complejos</string>
+    <string name="help_fragment_easy_food_panel_internet_searches">Búsquedas en Internet</string>
+    <string name="help_fragment_easy_food_panel_fin">Muévase entre ellas arrastrando su dedo horizontalmente</string>
+    <string name="help_fragment_easy_food_panel_unit_weight">Y algo importante a saber es que al editar alimentos, si especifica el peso de una unidad del alimento que está siendo editado jamás volverá a ser preguntado por su peso, sino por unidades</string>
+
+    <string name="help_fragment_easy_recommendation_panel_1">Puede ver la dosis inicial proporcionada por la Línea Base y todos los modificadores aplicados debajo</string>
+
+    <string name="help_fragment_easy_baseline_1_preprandial">Puede cambiar la última dosis preprandial generada por Cafydia o introducida a mano por usted</string>
+    <string name="help_fragment_easy_baseline_1_basal">Y también para la insulina basal</string>
+    <string name="help_fragment_easy_baseline_2_minimum">Puede establecer una dosis mínima preprandial, es decir, la dosis inicial de la Línea Base más modificadores nunca podrá estar por debajo de este valor</string>
+    <string name="help_fragment_easy_baseline_3">Puede modificar la recomendación modificando la función lineal:</string>
+    <string name="help_fragment_easy_baseline_3_1">Para comidas ligeras</string>
+    <string name="help_fragment_easy_baseline_3_2">Para todas las comidas</string>
+    <string name="help_fragment_easy_baseline_3_3">Para comidas copiosas</string>
+
+    <string name="help_fragment_easy_metabolic_rhythms_1">Los Ritmos Metabólicos son configuraciones que solucionan el problema que tenemos en algunas épocas, en las que necesitamos más o menos insulina de lo normal. Y además, puede que las necesidades crezcan o decrezcan con el paso de los días</string>
+    <string name="help_fragment_easy_metabolic_rhythms_1_more_more">Por defecto existe un Ritmo Metabólico llamado Default, es para su uso diario. Puede añadir más. (para Vacaciones, etc)</string>
+
+    <string name="help_fragment_easy_metabolic_rhythms_2_beginnings">En Comienzos puede establecer cómo las dosis serán modificadas con el paso del tiempo desde la activación del Ritmo Metabólico</string>
+    <string name="help_fragment_easy_metabolic_rhythms_2_correctives">En Correctivos puede añadir modificadores especiales que alterarán las dosis instantáneamente cuando sean activados en el menú de las comidas, como correr, caminar, etc</string>
+
+    <string name="help_fragment_easy_complex_food_intro_1_1">En esta actividad puede añadir Alimentos Complejos al panel de alimentos. ¿Qué significa Alimento Complejo en Cafydia?</string>
+    <string name="help_fragment_easy_complex_food_intro_1_2">Un Alimento Complejo es un alimento especial constituido por más alimentos</string>
+    <string name="help_fragment_easy_complex_food_intro_1_3">Si quiere cocinar arroz con carne, seleccione la cantidad de arroz desde el panel de alimentos y pese toda la comida cocinada resultante. Cafydia calculará el porcentage de carbohidratos y le permitirá añadir el Alimento Complejo para ser usado más tarde en el menú de comidas o bien para componer un nuevo Alimento Complejo</string>
+
+    <string name="help_fragment_easy_complex_food_1_food_panel">Este es el panel de alimentos</string>
+    <string name="help_fragment_easy_complex_food_1_food_selected">Y este el de alimentos seleccionados</string>
+
+    <string name="help_fragment_easy_beginnings_1">Un click largo sobre cada vista de comienzos le permite añadir o eliminar puntos en ella</string>
+    <string name="help_fragment_easy_beginnings_2">Defina cómo quiere que sea modificada cada insulina con el paso del tiempo</string>
+    <string name="help_fragment_easy_beginnings_3">Una cosa importante es lo que sigue: El Ritmo Metabólico Default es para su uso diario, así que toda modificación debería converger en 0. En el Ritmo Metabólico Default no puede cambiar los puntos en cuanto a su modificación pero sí su día. Para cambiar los puntos en cuanto a su modificación intente añadir un nuevo Ritmo Metabólico</string>
+
+    <string name="help_fragment_correctives_list_1_corrective">Si ir a correr o caminar hace que necesite menos insulina de lo normal, añada correctivos por cada una de estas actividades</string>
+    <string name="help_fragment_correctives_list_2_add_corrective">Pulse para añadir un nuevo Correctivo</string>
+
+    <string name="help_fragment_charts_general_1">La actividad de las gráficas podrá construirla tal y como usted lo desee</string>
+    <string name="help_fragment_charts_general_2">Pulse para añadir elementos a la actividad en todo momento</string>
+    <string name="help_fragment_charts_general_3">Debajo verá el panel de Anotaciones y Etiquetas. Arrastre el dedo desde la parte inferior de la pantalla para desplegarlo</string>
+    <string name="help_fragment_charts_general_4">Cuando añada nuevas páginas podrá moverse entre ellas arrastrando el dedo horizontalmente</string>
+
+    <string name="help_fragment_charts_new_page_created_1">Ahora, en la nueva Página puede añadir más elementos, como Texto o Gráficas</string>
+    <string name="help_fragment_charts_new_page_created_2">Además, si pulsa el botón de opciones podrá establecer un criterio global para la toma de datos en la página entera, mover la página a la izquierda o a la derecha, cambiar su título o eliminarla</string>
+
+    <string name="help_fragment_charts_click_or_long_click_1">Con un click en la Gráfica verá el sumario de los tests de glucosa representados en ella</string>
+    <string name="help_fragment_charts_click_or_long_click_2">Y si realiza un click largo el menú contextual se mostrará para poder configurar el criterio específico para la toma de datos, seleccionar elementos estadísticos a representar o eliminarla</string>
+
+    <string name="help_fragment_charts_panel_1">Las Anotaciones son texto ubicado en fechas concretas. Serán mostradas en las gráficas de tipo fecha. Le servirán para conocer si algo que cambió hizo que sus glucemias fuesen a mejor o a peor</string>
+    <string name="help_fragment_charts_panel_2">Las Etiquetas son rangos de fechas marcadas con texto. Le servirán para discriminar o extraer glucemias en dichos rangos con facilidad y estudiar su diabetes</string>
+
+    <string name="help_fragment_main_1">Todas estas pantallas podrán ser cerradas con un doble click para evitar cierres accidentales. Por favor, inténtelo</string>
+    <string name="help_fragment_main_2">¡Perfecto! Vamos a ir explicando poco a poco cómo funciona Cafydia</string>
+    <string name="help_fragment_main_6">¡Perfecto! Iremos viendo todos los conceptos necesarios para entender el funcionamiento de la app. Le doy la bienvenida a Cafydia :-)</string>
+
+    <string name="help_fragment_main_3">Cafydia genera recomendaciones de la siguiente forma:</string>
+    <string name="help_fragment_main_3_baseline">La parte preprandial de la recomendación comienza con la Línea Base, es una simple función lineal que cruza carbohidratos ingeridos con dosis</string>
+    <string name="help_fragment_main_3_modifiers">Después, son aplicados los modificadores del Ritmo Metabólico activo. Puede definir cómo las dosis irán siendo modificadas con el paso del tiempo desde la activación del Ritmo Metabólico (Comienzos) y/o puede definir modificadores para atender cambios puntuales cuando camina, corre, etc (Correctivos)</string>
+    <string name="help_fragment_main_3_modifiers_2">Y al final, la modificación del Factor de Corrección si fue activada y si es necesario que sus niveles de glucosa sean corregidos</string>
+    <string name="help_fragment_main_3_basal_1">La parte basal de la recomendación, si la está utilizando en Cafydia, es más simple. Comienza con el valor fijo introducido por usted para dicha comida, en el menú de la Línea Base</string>
+    <string name="help_fragment_main_3_basal_2">Y al final, son aplicados los Comienzos de tipo Basal del Ritmo Metabólico activo</string>
+
+
+
+    <string name="baseline_preprandial_still_need1">Aún faltan</string>
+    <string name="baseline_preprandial_still_need2">grupos de glucosa antes, comida y glucosa de después para</string>
+    <string name="baseline_preprandial_still_need3_midweek">entresemana</string>
+    <string name="baseline_preprandial_still_need3_and">y</string>
+    <string name="baseline_preprandial_still_need3_weekend">en fin de semana</string>
+    <string name="baseline_preprandial_still_need4">también</string>
+
+    <!-- Still need one breakfast of more than 65gr or less than 45gr of carbohydrates -->
+    <string name="baseline_preprandial_fit_still_need1">Aún necesito 1</string>
+    <string name="baseline_preprandial_fit_still_need2">de más de</string>
+    <string name="baseline_preprandial_fit_still_need3">or menos de</string>
+    <string name="baseline_preprandial_fit_still_need4">de carbohidratos</string>
+
+</resources>
+

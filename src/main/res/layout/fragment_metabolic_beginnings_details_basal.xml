@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCafydiaDefaultFullShade">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_view_white"
+            android:padding="5dp">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_section_layout_basal"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFF"
+                android:text="@string/metabolic_beginning_details_basal_title"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lBreakfast">
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_basal_breakfast"
+                android:id="@+id/tvBreakfast"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+                    android:id="@+id/chartBreakfast" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lLunch">
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_basal_lunch"
+                android:id="@+id/tvLunch"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+                    android:id="@+id/chartLunch" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lDinner">
+
+            <TextView
+                style="@style/MetabolicSubTitle"
+                android:text="@string/metabolic_beginning_details_basal_dinner"
+                android:id="@+id/tvDinner"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_view_more_black">
+
+                <org.cafydia.android.views.ModificationStartView
+                    style="@style/MetabolicChart"
+
+                    android:id="@+id/chartDinner" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/help_arrow_right"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+        android:text="@string/help_fragment_easy_complex_food_1_food_selected"
+        android:id="@+id/textView36"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView14"
+        android:layout_gravity="left|top"
+        android:src="@drawable/help_arrow_below_left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+        android:text="@string/help_fragment_easy_complex_food_1_food_panel"
+        android:id="@+id/textView35"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp" />
+</FrameLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorCafydiaDefault">#C08A</color> -->
+    <color name="colorCafydiaDefault">#4e5f77</color>
+    <color name="colorCafydiaDefaultTransparent">#dd4e5f77</color>
+    <color name="colorCafydiaDefaultLittleLight">#CeDfF7</color>
+    <color name="colorCafydiaDefaultLittleShade">#364253</color>
+    <color name="colorCafydiaDefaultFullShade">#272f3b</color>
+    <color name="colorCafydiaDefaultFullShadeTransparent">#dd272f3b</color>
+    <!-- <color name="colorCafydiaDefault">#006688</color> -->
+    <color name="colorActivityBackground">#272f3b</color> <!-- #D7D7D7 -->
+    <color name="colorActivityBackgroundOld">#D7D7D7</color>
+
+    <color name="colorActivityBackground2">#E9E9E9</color>
+
+    <color name="colorActivityStartBackground">#000</color>
+
+    <!-- Drawable bg activity -->
+    <color name="colorActivityBackgroundStart">#f0f0f0</color>
+    <color name="colorActivityBackgroundEnd">#e0e0e0</color>
+
+    <color name="colorInitialConfigurationBackground">#9000</color>
+
+    <color name="colorHelpFragmentBackground">#b012</color>
+    <color name="colorHelpFragmentText">#FFF</color>
+
+    <color name="colorPanelBackground">#FFF</color>
+    <color name="colorDrawerBackground">@color/colorCafydiaDefaultFullShadeTransparent</color>
+
+    <color name="preprandial">#F67F55</color>
+    <color name="preprandialLight">#f9b299</color>
+    <color name="basal">#66e099</color>
+    <color name="preprandialShade">#934c33</color>
+    <color name="basalShade">#005122</color>
+    <color name="preprandialMoreShade">#180c08</color>
+    <color name="basalMoreShade">#001408</color>
+
+    <color name="drawer_left">#fff</color>
+    <color name="drawer_right">#bbb</color>
+
+    <color name="panel_left_left">#ddd</color>
+    <color name="panel_left_right">#fff</color>
+    <color name="panel_right_left">#fff</color>
+    <color name="panel_right_right">#ddd</color>
+
+
+    <color name="colorAnnotations">#DC7993</color>
+
+    <color name="colorAnnotationsText">#FFFF</color>
+
+    <color name="colorWindowEdges">#FFF</color>
+
+    <!-- Colors for charts -->
+
+    <!-- Ring Charts -->
+    <color name="low_inner">#FFCeefF7</color>
+    <color name="low_outer">#FFe6fffb</color>
+
+    <color name="good_inner">#FFa3ecc1</color>
+    <color name="good_outer">#FFe3f9ec</color>
+
+    <color name="regular_inner">#FFffba66</color>
+    <color name="regular_outer">#FFfff1e0</color>
+
+    <color name="bad_inner">#FFff6666</color>
+    <color name="bad_outer">#FFffe0e0</color>
+
+    <color name="all_inner">#fff7f7f7</color>
+    <color name="all_outer">#0eee</color>
+
+    <!-- Food balls -->
+    <color name="food_low_start">#55002200</color>
+    <color name="food_low_end">#ff00ff99</color>
+    <color name="food_medium_start">#55442200</color>
+    <color name="food_medium_end">#ffffdd00</color>
+    <color name="food_high_start">#55220000</color>
+    <color name="food_high_end">#ffff6666</color>
+
+
+    <!-- Beginnings Charts -->
+    <color name="modification_start_view_dot_border_specific">#997fccd6</color>
+    <color name="modification_start_view_dot_border_global">#997faad6</color>
+    <color name="modification_start_view_dot_inner">#9034</color>
+    <color name="modification_start_view_text_dot">#FFFF</color>
+    <color name="modification_start_view_text_number_axis">#ff777777</color>
+
+    <color name="modification_start_view_line_white">#777faad6</color>
+    <color name="modification_start_view_chart_white">#777faad6</color>
+    <color name="modification_start_view_text_white">#fbcbbb</color>
+    <color name="modification_start_view_today_white">#FFfcd8cc</color>
+    <color name="modification_start_view_day_white">#FFFF</color>
+
+    <color name="modification_start_view_line">#aa7faad6</color>
+    <color name="modification_start_view_chart">#777faad6</color>
+    <color name="modification_start_view_text">#ac583b</color>
+    <color name="modification_start_view_today">#FFff5b5b</color>
+    <color name="modification_start_view_start_day">#F000</color>
+
+
+    <!-- Baseline Chart -->
+    <color name="baseline_chart_chart">#FF7faad6</color>
+    <color name="baseline_chart_text_axis">#ac583b</color>
+    <color name="baseline_chart_main_line">#777faad6</color>
+    <color name="baseline_chart_secondary_line">#77CCCCCC</color>
+    <color name="baseline_chart_separators">#777faad6</color>
+    <color name="baseline_chart_meal_to_draw">#9034</color>
+    <color name="baseline_chart_text_number_axis">#ff333333</color>
+
+    <color name="baseline_chart_chart_white">#a5c3e2</color>
+    <color name="baseline_chart_text_axis_white">#fbcbbb</color>
+    <color name="baseline_chart_main_line_white">#a5c3e2</color>
+    <color name="baseline_chart_secondary_line_white">#77CCCCCC</color>
+    <color name="baseline_chart_separators_white">#aaaaaa</color>
+    <color name="baseline_chart_meal_to_draw_white">#9034</color>
+    <color name="baseline_chart_text_number_axis_white">#FFFFFF</color>
+
+    <color name="baseline_chart_background">#00000000</color>
+    <color name="baseline_chart_average">#22d21f57</color>
+    <color name="baseline_chart_average_text">#ff000000</color>
+    <color name="baseline_chart_meal_to_draw_text">#FFFFFFFF</color>
+    <color name="baseline_chart_text_legend">#FFFFFFFF</color>
+    <color name="baseline_chart_text_background_legend">#60000000</color>
+
+    <!-- HbA1c Chart -->
+    <color name="chart_hba1c_chart">#FF7faad6</color>
+    <color name="chart_hba1c_line">#9034</color>
+    <color name="chart_hba1c_future_line">#77777777</color>
+    <color name="chart_hba1c_current_hba1c">#FF7faad6</color>
+    <color name="chart_hba1c_regression_line">#FF7faad6</color>
+    <color name="chart_hba1c_fill">#11009bFF</color>
+    <color name="chart_hba1c_text_axis">#ff333333</color>
+    <color name="chart_hba1c_separators">#227faad6</color>
+    <color name="chart_hba1c_red_zone">#00f9e8e6</color>
+    <color name="chart_hba1c_text_statistical_object">#FFFFFFFF</color>
+    <color name="chart_hba1c_background_statistical_object">#60000000</color>
+
+    <!-- Chart View Generic -->
+    <color name="chart_view_chart">#FF7faad6</color>
+    <color name="chart_view_text">#ff333333</color>
+    <color name="chart_view_text_statistical_object">#FFFFFFFF</color>
+    <color name="chart_view_background_statistical_object">#60000000</color>
+    <color name="chart_view_red_zone">#35f9e8e6</color>
+    <color name="chart_view_blue_zone">#07009bFF</color>
+    <color name="chart_view_glucose_tests">#444e5f77</color>
+    <color name="chart_view_separators">#227faad6</color>
+
+    <color name="chart_view_linear_regression">#9966c3ff</color>
+    <color name="chart_view_polynomial_regression_2">#99009bFF</color>
+    <color name="chart_view_polynomial_regression_3">#99003e66</color>
+
+    <color name="chart_view_mean">#9900FF00</color>
+    <color name="chart_view_median">#99ff8ff5</color>
+    <color name="chart_view_max">#bbd7675e</color>
+    <color name="chart_view_min">#bb6f8197</color>
+
+    <color name="chart_view_criteria_disabled">#FFD7D7D7</color>
+    <color name="chart_view_criteria_specific">#FF075674</color>
+    <color name="chart_view_criteria_global">#FFA4A0A0</color>
+
+
+
+
+
+
+
+
+
+    <!--
+    This is the colors for clickable items in the UI.
+    Charts, ListView elements, Buttons, etc.
+    -->
+    <color name="start_color_for_clickable_view_clicked">#FFFF</color>
+    <color name="end_color_for_clickable_view_clicked">#FCCC</color>
+
+    <color name="start_color_for_clickable_view_not_clicked">#7eee</color>
+    <color name="end_color_for_clickable_view_not_clicked">#7eee</color>
+
+    <color name="start_color_for_clickable_view_disabled">#7333</color>
+    <color name="end_color_for_clickable_view_disabled">#7333</color>
+
+
+
+
+
+    <color name="colorToastBackgroundStart">#007799</color>
+    <color name="colorToastBackgroundEnd">#005577</color>
+    <color name="colorToastEdges">#AAA</color>
+
+
+
+    <color name="colorTextUnitsValue">#000</color>
+    <color name="colorTextUnitsValueLight">#FFF</color>
+
+
+    <color name="colorValueAppliedMealMenu">#069</color>
+</resources>

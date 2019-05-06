@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="start"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/sRecommendation"
+        android:textOn="@string/meals_activity_switch_meal"
+        android:textOff="@string/meals_activity_switch_snack"
+        android:checked="false"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

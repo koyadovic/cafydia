@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_before_after">
+        <item>Antes de</item>
+        <item>Después de</item>
+        <item>En la noche</item>
+    </string-array>
+
+    <string-array name="time_meal">
+        <item>Desayuno</item>
+        <item>Comida</item>
+        <item>Cena</item>
+    </string-array>
+
+    <string-array name="snack_times">
+        <item>Media mañana</item>
+        <item>Merienda</item>
+        <item>Antes de acostar</item>
+        <item>Libre</item>
+    </string-array>
+
+    <string-array name="action_food_dialog_agree_titles">
+        <item>Marcar como favorito</item>
+        <item>Marcar como no favorito</item>
+        <item>Eliminar alimento</item>
+        <item>Añadir alimento</item>
+    </string-array>
+
+    <string-array name="action_food_dialog_agree_messages">
+        <item>Esto marcará este alimento como favorito.</item>
+        <item>Esto marcará este alimento como no favorito.</item>
+        <item>Esto eliminará el alimento seleccionado.</item>
+        <item>Esto añadirá a la base de datos local el alimento seleccionado.</item>
+    </string-array>
+
+    <string-array name="selected_food_dialog_agree_titles">
+        <item>Editar selección</item>
+        <item>Eliminar selección</item>
+
+    </string-array>
+    <string-array name="selected_food_dialog_agree_messages">
+        <item>Esta acción eliminará la selección y mostrará de nuevo el diálogo de selección de alimento</item>
+        <item>Esta acción eliminará la selección</item>
+    </string-array>
+
+    <!-- Preferences -->
+    <string-array name="preferences_units">
+        <item>Gramos</item>
+        <item>Libras</item>
+        <item>Onzas</item>
+    </string-array>
+    <string-array name="preferences_units_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="preferences_glucose">
+        <item>mg/dL</item>
+        <item>mmol/L</item>
+    </string-array>
+    <string-array name="preferences_glucose_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+
+    <string-array name="preferences_automatic_annotations">
+        <item>Añadir automáticamente</item>
+        <item>Preguntar sobre ello</item>
+    </string-array>
+    <string-array name="preferences_automatic_annotations_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="preferences_automatic_labels">
+        <item>Añadir automáticamente</item>
+        <item>Preguntar sobre ello</item>
+    </string-array>
+    <string-array name="preferences_automatic_labels_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+    <string-array name="preferences_notification_after_meal">
+        <item>En 90 minutos</item>
+        <item>En 105 minutos</item>
+        <item>En 120 minutos</item>
+    </string-array>
+    <string-array name="preferences_notification_after_meal_values">
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="chart_page_elements">
+        <item>Página</item>
+        <item>Texto</item>
+        <item>Gráfica</item>
+        <item>Anotación</item>
+        <item>Etiqueta</item>
+    </string-array>
+
+    <string-array name="chart_page_elements_hba1c_position">
+        <item>Página</item>
+        <item>Anotación</item>
+        <item>Etiqueta</item>
+    </string-array>
+
+    <string-array name="chart_types">
+        <item>Glucosa por horas</item>
+        <item>Glucosa por día de la semana</item>
+        <item>Glucosa por fecha</item>
+        <item>Glucosa por cantidad de carbohidratos</item>
+    </string-array>
+
+    <string-array name="day_weeks_short">
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Mi</item>
+        <item>Ju</item>
+        <item>Vi</item>
+        <item>Sá</item>
+        <item>Do</item>
+    </string-array>
+
+    <string-array name="meal_times_short">
+        <item>A/De</item>
+        <item>D/De</item>
+        <item>A/Co</item>
+        <item>D/Co</item>
+        <item>A/Ce</item>
+        <item>D/Ce</item>
+        <item>Noc</item>
+    </string-array>
+    <string-array name="statistical_object_elements">
+        <item>Rejilla</item>
+        <item>Glucosas</item>
+        <item>Máximo</item>
+        <item>Mínimo</item>
+        <item>Media</item>
+        <item>Mediana</item>
+        <item>Regresión lineal</item>
+        <item>Regresión pol. grado 2</item>
+        <item>Regresión pol. grado 3</item>
+    </string-array>
+
+    <string-array name="meal_hour_ranges">
+        <item>20 antes y después</item>
+        <item>30 antes y después</item>
+        <item>40 antes y después</item>
+        <item>50 antes y después</item>
+    </string-array>
+
+    <string-array name="meal_hour_ranges_values">
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="glucoses_above_correction_factor">
+        <item>160mg/dL - 8.9mmol/L</item>
+        <item>150mg/dL - 8.3mmol/L</item>
+        <item>140mg/dL - 7.8mmol/L</item>
+        <item>130mg/dL - 7.2mmol/L</item>
+        <item>120mg/dL - 6.7mmol/L</item>
+        <item>110mg/dL - 6.1mmol/L</item>
+        <item>100mg/dL - 5.5mmol/L</item>
+    </string-array>
+
+    <string-array name="glucoses_above_correction_factor_values">
+        <item>160</item>
+        <item>150</item>
+        <item>140</item>
+        <item>130</item>
+        <item>120</item>
+        <item>110</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="glucoses_below_correction_factor">
+        <item>100mg/dL - 5.5mmol/L</item>
+        <item>90mg/dL - 5.0mmol/L</item>
+        <item>80mg/dL - 4.4mmol/L</item>
+        <item>70mg/dL - 3.9mmol/L</item>
+        <item>60mg/dL - 3.3mmol/L</item>
+    </string-array>
+
+    <string-array name="glucoses_below_correction_factor_values">
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+    </string-array>
+
+</resources>

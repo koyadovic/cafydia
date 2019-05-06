@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNameTitle"
+        android:text="@string/dialog_selecting_food_fragment_name_title"
+        style="@style/MyTextAppearance.FieldHeader"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/MyTextAppearanceMedium.Black"
+        android:id="@+id/textViewName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewWeightTitle"
+        android:text="@string/dialog_selecting_food_fragment_weight_title"
+        style="@style/MyTextAppearance.FieldHeader"
+        android:layout_marginTop="10dp" />
+
+    <org.cafydia.android.views.EditTextWeight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/editTextWeight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_selecting_food_units_title"
+        style="@style/MyTextAppearance.FieldHeader"
+        android:id="@+id/textViewUnits" />
+
+    <org.cafydia.android.views.EditTextUnits
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/editTextUnits"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tvMaxSelectable"
+        style="@style/MyTextAppearance.Footer"/>
+
+</LinearLayout>

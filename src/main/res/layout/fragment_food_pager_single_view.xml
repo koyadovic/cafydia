@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivLeftArrow"
+            android:src="@drawable/ic_arrow_left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewTitle"
+            style="@style/MyTextAppearance.FieldHeader"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivRightArrow"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flNoSearchMade"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ic_search_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTextAppearance.Footer"
+            android:text="@string/food_fragment_no_search_made"
+            android:id="@+id/textView3"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flNoFoodAdded"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_food_selected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTextAppearance.Footer"
+            android:text="@string/food_fragment_no_food_added_yet"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flNoResults"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageView6"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ic_search_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTextAppearance.Footer"
+            android:text="@string/food_fragment_no_results"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flSearching"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flNoInternet"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MyTextAppearance.Footer"
+            android:text="@string/food_fragment_no_internet_connection"
+            android:id="@+id/textView4"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flNoBedca"
+        android:background="@drawable/bg_left_panel"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MyTextAppearance.Footer"
+            android:text="@string/food_fragment_no_bedca"
+            android:id="@+id/textView44"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewFood"
+        android:background="@drawable/bg_left_panel" />
+
+
+
+</LinearLayout>

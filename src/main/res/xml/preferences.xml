@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- UNITS -->
+    <PreferenceScreen
+        android:title="@string/preference_screen_title_units">
+        <PreferenceCategory
+            android:title="@string/preference_category_title_units"
+            android:key="pref_key_units">
+
+            <ListPreference
+                android:key="pref_key_units_weight"
+                android:title="@string/pref_units_weight_title"
+                android:dialogTitle="@string/pref_units_weight_dialog_title"
+                android:entries="@array/preferences_units"
+                android:entryValues="@array/preferences_units_values"
+
+                android:defaultValue="0"/>
+
+            <ListPreference
+                android:key="pref_key_units_glucose"
+                android:title="@string/pref_units_glucose_title"
+                android:dialogTitle="@string/pref_units_glucose_dialog_title"
+                android:entries="@array/preferences_glucose"
+                android:entryValues="@array/preferences_glucose_values"
+                android:defaultValue="0"/>
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+    <!-- MEALS -->
+    <PreferenceScreen
+        android:title="@string/preference_screen_title_meals">
+
+        <PreferenceCategory
+            android:key="pref_key_glucose"
+            android:title="@string/pref_glucose_category_title">
+            <ListPreference
+                android:key="pref_key_glucose_after_meal"
+                android:title="@string/pref_glucose_time_after_meal"
+                android:dialogTitle="@string/pref_glucose_time_after_meal"
+                android:entries="@array/preferences_notification_after_meal"
+                android:entryValues="@array/preferences_notification_after_meal_values"
+                android:defaultValue="120"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/pref_correction_factor_title">
+            <PreferenceScreen
+                android:title="@string/pref_correction_factor_configure">
+                <PreferenceCategory
+                    android:title="@string/pref_correction_factor_title">
+
+                    <!-- android:summary="@string/pref_correction_factor_summary" -->
+
+                    <CheckBoxPreference
+                        android:title="@string/pref_correction_factor_above_activate_title"
+                        android:defaultValue="false"
+                        android:key="pref_key_correction_factor_above_activated"/>
+
+                    <ListPreference
+                        android:key="pref_key_correction_factor_above"
+                        android:entries="@array/glucoses_above_correction_factor"
+                        android:entryValues="@array/glucoses_above_correction_factor_values"
+                        android:defaultValue="100"
+                        android:dependency="pref_key_correction_factor_above_activated"/>
+
+
+                    <CheckBoxPreference
+                        android:title="@string/pref_correction_factor_below_activate_title"
+                        android:defaultValue="false"
+                        android:key="pref_key_correction_factor_below_activated"/>
+
+                    <ListPreference
+                        android:key="pref_key_correction_factor_below"
+                        android:entries="@array/glucoses_below_correction_factor"
+                        android:entryValues="@array/glucoses_below_correction_factor_values"
+                        android:defaultValue="100"
+                        android:dependency="pref_key_correction_factor_below_activated"/>
+
+                </PreferenceCategory>
+            </PreferenceScreen>
+
+        </PreferenceCategory>
+
+        <!-- MEAL HOURS !!! -->
+        <PreferenceCategory
+            android:title="@string/pref_meal_hours_title">
+
+            <ListPreference
+                android:key="pref_meal_hours_choose_minutes_of_range"
+                android:title="@string/pref_meal_hours_choose_minutes_of_range"
+                android:dialogTitle="@string/pref_meal_hours_choose_minutes_of_range"
+                android:entries="@array/meal_hour_ranges"
+                android:entryValues="@array/meal_hour_ranges_values"
+                android:defaultValue="60"/>
+
+            <CheckBoxPreference
+                android:title="@string/pref_meal_hours_notify_if_correct_meal_hour"
+                android:summary="@string/pref_meal_hours_notify_if_correct_meal_hour_summary"
+                android:key="pref_meal_hours_notify_if_correct_meal_hour"
+                android:lines="2"
+                android:defaultValue="true"/>
+
+            <CheckBoxPreference
+                android:title="@string/pref_meal_hours_notify_strict_mode_title"
+                android:summary="@string/pref_meal_hours_notify_strict_mode_summary"
+                android:key="pref_meal_hours_notify_strict_mode"
+                android:lines="2"
+                android:dependency="pref_meal_hours_notify_if_correct_meal_hour"
+                android:defaultValue="false"/>
+
+            <CheckBoxPreference
+                android:title="@string/pref_meal_hours_notify_ten_minutes_before_limit"
+                android:summary="@string/pref_meal_hours_notify_ten_minutes_before_limit_summary"
+                android:key="pref_meal_hours_notify_ten_minutes_before_limit"
+                android:lines="2"
+                android:defaultValue="true"/>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/pref_advanced_title_category"
+            android:key="pref_key_advanced">
+
+            <CheckBoxPreference
+                android:title="@string/pref_advanced_function_parameters_in_baseline_chart_title"
+                android:summary="@string/pref_advanced_function_parameters_in_baseline_chart_summary"
+                android:key="pref_key_advanced_function_parameters"
+                android:lines="2"
+                android:defaultValue="true"/>
+
+            <CheckBoxPreference
+                android:title="@string/pref_advanced_hide_sections_no_modification_title"
+                android:summary="@string/pref_advanced_hide_sections_no_modification_summary"
+                android:key="pref_key_advanced_hide_sections_no_modification"
+                android:lines="2"
+                android:defaultValue="false"/>
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+
+    <!-- ANNOTATIONS -->
+    <PreferenceScreen
+        android:title="@string/preference_screen_title_annotations">
+
+        <PreferenceCategory
+            android:title="@string/pref_automatic_annotations">
+            <CheckBoxPreference
+                android:title="@string/pref_automatic_annotations"
+                android:defaultValue="true"
+                android:key="pref_automatic_annotations"/>
+
+            <ListPreference
+                android:key="pref_key_automatic_annotations_default_action"
+                android:title="@string/pref_automatic_annotations_title_default_action"
+                android:dialogTitle="@string/pref_automatic_annotations_title_default_action"
+                android:entries="@array/preferences_automatic_annotations"
+                android:entryValues="@array/preferences_automatic_annotations_values"
+                android:defaultValue="1"
+                android:dependency="pref_automatic_annotations"/>
+
+
+            <CheckBoxPreference
+                android:title="@string/pref_automatic_annotations_preprandial_baseline_changes"
+                android:key="pref_automatic_annotations_preprandial_baseline"
+                android:defaultValue="true"
+                android:dependency="pref_automatic_annotations"/>
+            <CheckBoxPreference
+                android:title="@string/pref_automatic_annotations_basal_baseline_changes"
+                android:key="pref_automatic_annotations_basal_baseline"
+                android:defaultValue="true"
+                android:dependency="pref_automatic_annotations"/>
+            <CheckBoxPreference
+                android:title="@string/pref_automatic_annotations_corrective_changes"
+                android:key="pref_automatic_annotations_corrective"
+                android:defaultValue="false"
+                android:dependency="pref_automatic_annotations"/>
+            <CheckBoxPreference
+                android:title="@string/pref_automatic_annotations_metabolic_rhythm_activation"
+                android:key="pref_automatic_annotations_metabolic_rhythm"
+                android:defaultValue="false"
+                android:dependency="pref_automatic_annotations"/>
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+    <!-- LABELS -->
+    <PreferenceScreen
+        android:title="@string/preference_screen_title_labels">
+
+        <CheckBoxPreference
+            android:title="@string/pref_automatic_labels"
+            android:summary="@string/pref_automatic_labels_summary"
+            android:defaultValue="true"
+            android:key="pref_automatic_labels"/>
+
+        <ListPreference
+            android:key="pref_key_automatic_labels_default_action"
+            android:title="@string/pref_automatic_labels_title_default_action"
+            android:dialogTitle="@string/pref_automatic_labels_title_default_action"
+            android:entries="@array/preferences_automatic_labels"
+            android:entryValues="@array/preferences_automatic_labels_values"
+            android:defaultValue="1"
+            android:dependency="pref_automatic_labels"/>
+
+    </PreferenceScreen>
+
+    <!-- RESET TUTORIAL MODE -->
+    <Preference
+        android:title="@string/button_preference_reset_tutorial_mode_title"
+        android:key="@string/button_preference_reset_tutorial_mode_key"
+        android:summary="@string/button_preference_reset_tutorial_mode_summary" />
+
+
+</PreferenceScreen>

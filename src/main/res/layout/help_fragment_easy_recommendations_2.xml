@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView18"
+            android:src="@drawable/help_number_1"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+            android:text="@string/help_fragment_main_3_baseline"
+            android:id="@+id/textView357"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</FrameLayout>

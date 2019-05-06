@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+        android:text="@string/help_fragment_easy_metabolic_rhythms_2_correctives"
+        android:id="@+id/textView378"
+        android:layout_gravity="right|top"
+        android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView14876876"
+            android:layout_gravity="right|top"
+            android:src="@drawable/help_arrow_below_right" />
+    </LinearLayout>
+
+</FrameLayout>

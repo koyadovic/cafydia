@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_new_chart_element"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/activity_charts_new_element"
+        android:showAsAction="always"/>
+
+    <item android:id="@+id/action_chart_change_title"
+        android:title="@string/activity_charts_change_title"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_chart_page_set_criteria"
+        android:title="@string/activity_charts_set_data_criteria"
+        android:showAsAction="never"/>
+
+
+    <item android:id="@+id/action_chart_move_to_left"
+        android:title="@string/activity_charts_move_to_left"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_chart_move_to_right"
+        android:title="@string/activity_charts_move_to_right"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_chart_page_delete"
+        android:title="@string/activity_charts_delete_chart_page"
+        android:showAsAction="never"/>
+
+
+</menu>

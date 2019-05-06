@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cafydia.android" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.telephony" android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="false"
+        />
+
+    <!-- android:name=".application.CafydiaDiabetes"   -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:backupAgent=".services.CafydiaAgentHelper"
+        android:theme="@style/MyTheme">
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIM0ZBn4DQPgCKEXz8wf1OngyjzpS6NXbiDwehXg" />
+
+        <receiver android:name=".services.CafydiaReceiver"/>
+
+        <receiver android:name=".mealalarms.MealAlarmReceiver"/>
+
+        <!-- When boot is completed, this class will start automatically the SetMealAlarmsService -->
+        <receiver android:name=".mealalarms.AutoStartMealAlarmService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".mealalarms.SetMealAlarmsService" />
+
+        <activity
+            android:name=".activities.ActivitySendCrash"
+            android:theme="@android:style/Theme.Holo.Dialog"
+
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name=".activities.SEND_CRASH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.ActivityMain"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity android:name=".activities.ActivityMealsSnacks"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:label="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+        <activity android:name=".activities.ActivityBaseline"
+            android:label="@string/activity_baseline_label"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+        <activity android:name=".activities.ActivityAddComplexFood"
+            android:label="@string/complex_food_activity_title"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+
+        <activity android:name=".activities.ActivityMetabolicRhythms"
+            android:label="@string/metabolic_rhythms_activity_label"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+
+        <activity android:name=".activities.ActivityBuildCharts"
+            android:label="@string/activity_charts_label"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+
+        <activity android:name=".activities.ActivitySettings"
+            android:label="@string/preferences_activity_title"
+            android:parentActivityName=".activities.ActivityMain"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/MyTheme.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMain" />
+        </activity>
+
+        <activity android:name=".activities.ActivityStart"
+            android:theme="@style/MyThemeStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".initialconfiguration.InitialConfigurationActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MyThemeStart" >
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="-30dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+            android:text="@string/help_fragment_easy_baseline_3"
+            android:id="@+id/textView34"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView13"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/help_arrow_above_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="190dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView20"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/help_number_1" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+            android:id="@+id/textView33"
+            android:gravity="center"
+            android:text="@string/help_fragment_easy_baseline_3_1"
+            android:layout_gravity="center_horizontal|top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="260dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView200"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/help_number_2" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+            android:id="@+id/textView333"
+            android:text="@string/help_fragment_easy_baseline_3_2"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="330dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2000"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/help_number_3" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/HelpFragmentBundleTextAppearance"
+            android:id="@+id/textView3333"
+            android:text="@string/help_fragment_easy_baseline_3_3"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

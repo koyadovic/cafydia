@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--
+     GLOBAL THEME
+    -->
+    <style name="MyTheme.Settings">
+        <item name="android:windowBackground">@color/colorActivityBackground2</item>
+    </style>
+
+    <style name="MyThemeStart" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/colorActivityStartBackground</item>
+        <item name="android:colorPressedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorLongPressedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorFocusedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorMultiSelectHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorActivatedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+        <item name="android:switchTextAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:spinnerStyle">@style/MySpinnerStyle.Start</item>
+        <item name="android:spinnerItemStyle">@style/MySpinnerItemStyle.Start</item>
+        <item name="android:spinnerDropDownItemStyle">@style/MySpinnerDropDownItemStyle.Start</item>
+        <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="android:buttonStyleToggle">@style/MyToggleButtonStyle</item>
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.White</item>
+        <item name="android:textAppearanceSmall">@style/MyTextAppearanceSmall.White</item>
+        <item name="android:textAppearanceLarge">@style/MyTextAppearanceLarge.White</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/MyTextAppearanceSmall.White</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/MyTextAppearanceLarge.White</item>
+        <item name="android:actionMenuTextAppearance">@style/MyTextAppearanceSmall.White</item>
+        <item name="android:itemTextAppearance">@style/MyMenuItemStyle</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:colorPressedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorLongPressedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+
+        <item name="android:colorFocusedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorMultiSelectHighlight">@color/colorCafydiaDefaultLittleLight</item>
+        <item name="android:colorActivatedHighlight">@color/colorCafydiaDefaultLittleLight</item>
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+
+        <item name="android:switchTextAppearance">@style/MyTextAppearanceSmall.Black</item>
+
+        <item name="android:spinnerStyle">@style/MySpinnerStyle</item>
+        <item name="android:spinnerItemStyle">@style/MySpinnerItemStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/MySpinnerDropDownItemStyle</item>
+        <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="android:buttonStyleToggle">@style/MyToggleButtonStyle</item>
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+
+
+
+        <item name="android:windowBackground">@color/colorActivityBackground</item>
+
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:textAppearanceSmall">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:textAppearanceLarge">@style/MyTextAppearanceLarge.Black</item>
+
+
+
+        <item name="android:popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:popupTheme">@style/popupMenuStyle</item>
+        <!--
+
+        -->
+
+        <item name="android:textAppearanceSmallPopupMenu">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/MyTextAppearanceLarge.Black</item>
+        <item name="android:actionMenuTextAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:itemTextAppearance">@style/MyMenuItemStyle</item>
+
+        <!-- todo esta mierda no tira -->
+        <!-- <item name="android:selectableItemBackground">@drawable/background_layout_on_click</item> -->
+
+
+    </style>
+
+    <style name="popupMenuStyle" parent="@android:style/Widget.Holo.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:background">@drawable/bg_popup_menu</item>
+    </style>
+
+    <style name="HelpFragmentBundleTextAppearance">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <!--
+     ACTIONBAR
+     -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/colorCafydiaDefault</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="android:subtitleTextStyle">@style/MyActionBarSubTitle</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="MyActionBarSubTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--
+    TextAppearance
+    -->
+
+    <!--
+    FONT LIGHT, COLOR BLACK
+    -->
+    <style name="MyTextAppearance" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceSmall" parent="android:TextAppearance.Small">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceMedium" parent="android:TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="MyTextAppearanceLarge" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="MyTextAppearanceExtraLarge" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">46sp</item>
+    </style>
+
+    <style name="MyTextAppearanceNormal.White">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTextAppearanceNormalSmall.White">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTextAppearanceNormalMedium.White">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTextAppearanceNormalLarge.White">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTextAppearanceNormalExtraLarge.White">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyTextAppearanceNormal" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceNormalSmall" parent="android:TextAppearance.Small">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceNormalMedium" parent="android:TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="MyTextAppearanceNormalLarge" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="MyTextAppearanceNormalExtraLarge" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">46sp</item>
+    </style>
+
+
+
+
+    <!--
+    FONT THIN, COLOR BLACK
+    -->
+    <style name="MyTextAppearanceThin" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceSmallThin" parent="android:TextAppearance.Small">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyTextAppearanceMediumThin" parent="android:TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="MyTextAppearanceLargeThin" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="MyTextAppearanceExtraLargeThin" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#AAA</item>
+        <item name="android:textSize">46sp</item>
+    </style>
+
+    <!--
+    FONT LIGHT, COLOR WHITE
+    -->
+    <style name="MyTextAppearance.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceSmall.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceMedium.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceLarge.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceExtraLarge.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+
+    <!--
+    FONT THIN, COLOR WHITE
+    -->
+    <style name="MyTextAppearanceThin.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceSmallThin.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceMediumThin.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceLargeThin.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+    <style name="MyTextAppearanceExtraLargeThin.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+
+    <!--
+    FONT LIGHT, COLOR BLACK
+    -->
+    <style name="MyTextAppearance.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearance.Black.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTextAppearanceSmall.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceMedium.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceLarge.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceExtraLarge.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+
+    <!--
+    FONT THIN, COLOR BLACK
+    -->
+    <style name="MyTextAppearanceThin.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceSmallThin.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceMediumThin.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceLargeThin.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+    <style name="MyTextAppearanceExtraLargeThin.Black">
+        <item name="android:textColor">#E444</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <style name="MyTextAppearance.Toast">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+
+
+
+
+    <style name="MyTextAppearance.FieldHeader">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorCafydiaDefault</item>
+    </style>
+
+    <style name="MyTextAppearance.FieldHeader.LittleLight">
+        <item name="android:textColor">@color/colorCafydiaDefaultLittleLight</item>
+    </style>
+    <style name="MyTextAppearance.FieldHeader.LittleLight.Preprandial">
+        <item name="android:textColor">@color/preprandial</item>
+    </style>
+    <style name="MyTextAppearance.FieldHeader.LittleLight.Basal">
+        <item name="android:textColor">@color/basal</item>
+    </style>
+
+    <style name="MySeparatorStyle.Preprandial">
+        <item name="android:background">@color/preprandialLight</item>
+    </style>
+    <style name="MySeparatorStyle.Basal">
+        <item name="android:background">@color/basal</item>
+    </style>
+
+
+    <style name="MyTextAppearance.FieldHeader.White">
+        <item name="android:textColor">#EEE</item>
+    </style>
+
+
+
+
+    <style name="MyTextAppearance.Footer">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <!-- <item name="android:textColor">@color/colorTextFooter</item> -->
+        <item name="android:textColor">#AAA</item>
+    </style>
+    <style name="MyTextAppearance.Footer.White">
+        <!-- <item name="android:textColor">@color/colorTextFooterLight</item> -->
+        <item name="android:textColor">#EEE</item>
+    </style>
+
+
+    <style name="MyTextAppearance.Units">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#AAA</item>
+        <!--<item name="android:textColor">@color/colorTextUnits</item> -->
+    </style>
+    <style name="MyTextAppearance.Units.White">
+        <!-- <item name="android:textColor">@color/colorTextUnitsLight</item> -->
+        <item name="android:textColor">#EEE</item>
+    </style>
+
+    <style name="MyTextAppearance.UnitsValue">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorTextUnitsValue</item>
+    </style>
+    <style name="MyTextAppearance.UnitsValue.White">
+        <item name="android:textColor">@color/colorTextUnitsValueLight</item>
+    </style>
+
+
+    <!-- SEPARATORS -->
+    <style name="MyShadowUpStyle">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_shadow_up</item>
+    </style>
+    <style name="MyShadowDownStyle">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_shadow_down</item>
+    </style>
+
+    <style name="MyCategorySeparatorStyle">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/colorCafydiaDefault</item>
+    </style>
+
+    <style name="MySeparatorStyle">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#2333</item>
+    </style>
+
+    <style name="MySeparatorStyleLittleLight">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:background">@color/colorCafydiaDefaultLittleLight</item>
+    </style>
+
+    <style name="CafydiaAlertDialogSeparator">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="CafydiaAlertDialogTitleTextAppearance" parent="MyTextAppearance.Black">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MyVerticalSeparatorStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#2333</item>
+    </style>
+
+    <style name="MyListViewElementLateralLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">5dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+
+
+
+
+
+    <!-- root Layouts and root Containers -->
+    <style name="MyRootLayoutStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <!--
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        -->
+    </style>
+
+    <style name="MyRootDialogStyle" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="MyRootPanelStyle">
+        <item name="android:background">@color/colorPanelBackground</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="MyPopupMenuStyle" parent="android:Widget.Holo.ListPopupWindow">
+        <item name="android:background">@drawable/popup_menu_bg</item>
+        <item name="android:textAppearance">@style/MyTextAppearanceMedium</item>
+    </style>
+
+    <style name="MyFloatingLayoutStyle">
+        <!-- <item name="android:background">#006688</item> -->
+
+        <!--
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/floating_layout_shadow</item>
+        -->
+
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@drawable/bg_root_view_default</item>
+
+    </style>
+
+
+
+
+    <!---
+    |
+    | METABOLIC RHYTHMS
+    |
+    - -->
+    <style name="MetabolicTitle" parent="MyTextAppearanceNormal.White">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+
+        <item name="android:background">@drawable/bg_view_white</item>
+        <item name="android:padding">5dp</item>
+
+    </style>
+    <style name="MetabolicSubTitle" parent="MyTextAppearanceSmall.White">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="MetabolicSummaryText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#001166</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MetabolicShadowBelow">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_separator</item>
+    </style>
+    <style name="MetabolicVerticalLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="MetabolicVerticalLayoutClickable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_view_white</item>
+    </style>
+
+    <style name="MetabolicChart">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">230dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/background_clickable_chart</item>
+    </style>
+
+    <style name="MetabolicBasalInnerLayout">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">#E2E2E2</item>
+    </style>
+    <style name="MetabolicRadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+    <style name="MetabolicSwitch" parent="android:Widget.CompoundButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="MetabolicCheckbox" parent="android:Widget.CompoundButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
+
+    <!-- MenuItem -->
+    <style name="MyMenuItemStyle" parent="android:TextAppearance.Holo.Widget.IconMenu.Item">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+    </style>
+
+
+    <!-- TextViews -->
+    <style name="MyTextViewStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="MyButtonStyle" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/background_clickable_button</item>
+        <item name="android:textColor">#222</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <!-- Edittexts -->
+    <style name="MyEditTextStyle" parent="android:Widget.Holo.EditText">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- Spinners -->
+    <style name="MySpinnerStyle" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:background">@drawable/background_spinner</item>
+    </style>
+    <style name="MySpinnerItemStyle" parent="android:Widget.Holo.Light.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+    </style>
+    <style name="MySpinnerDropDownItemStyle" parent="android:Widget.Holo.Light.DropDownItem.Spinner">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+    </style>
+
+    <!-- Spinners -->
+    <style name="MySpinnerStyle.Start">
+        <item name="android:textAppearance">@style/MyTextAppearanceMedium.White</item>
+    </style>
+    <style name="MySpinnerItemStyle.Start">
+        <item name="android:textAppearance">@style/MyTextAppearanceMedium.White</item>
+    </style>
+    <style name="MySpinnerDropDownItemStyle.Start">
+        <item name="android:textAppearance">@style/MyTextAppearanceMedium.White</item>
+    </style>
+
+
+    <style name="MyRadioButtonStyle" parent="android:Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+    </style>
+
+    <style name="MySwitchStyle">
+        <item name="android:textAppearance">@style/MyTextAppearanceSmall.Black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+    </style>
+
+    <style name="MyToggleButtonStyle" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:background">@drawable/background_toggle_button</item>
+    </style>
+
+
+
+
+
+    <!-- Chart Page Elements -->
+    <style name="ChartPageElement">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="ChartPageElement.Text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#222</item>
+        <item name="android:background">@drawable/background_chart_page_element</item>
+    </style>
+
+    <style name="ChartPageElement.Chart">
+        <item name="android:background">@drawable/background_chart_page_element_chart</item>
+
+    </style>
+
+
+
+    <!-- EditText for names -->
+    <style name="EditTextNames" parent="MyEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearanceMedium.Black</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+    <!-- Compound Modification Zone -->
+    <style name="CompoundModificationZoneSelected">
+        <item name="android:background">@drawable/compound_modification_zone_selected_bg</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="CompoundModificationZoneNotSelected">
+        <item name="android:background">@drawable/compound_modification_zone_not_selected_bg</item>
+        <item name="android:textColor">#FAAA</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>
