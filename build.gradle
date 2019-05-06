@@ -4,8 +4,8 @@ android {
     signingConfigs {
     }
 
-    compileSdkVersion 23
-    buildToolsVersion '21.1.2'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     def versionPropsFile = file('version.properties')
 
@@ -30,7 +30,7 @@ android {
             versionCode code
             versionName name
             minSdkVersion 14
-            targetSdkVersion 22
+            targetSdkVersion 28
         }
 
         buildTypes {
@@ -56,9 +56,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-v4:22.+'
-    compile 'com.google.code.gson:gson:2.3@jar'
-    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:28+'
+    implementation 'com.google.code.gson:gson:2.3@jar'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
-
