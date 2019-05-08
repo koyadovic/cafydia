@@ -123,7 +123,7 @@
                 android:id="@+id/tvGlycemiaUnit" />
         </LinearLayout>
 
-        <org.cafydia.android.views.EditTextGlucose
+        <org.cafydia4.android.views.EditTextGlucose
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/glucoseEditText" />

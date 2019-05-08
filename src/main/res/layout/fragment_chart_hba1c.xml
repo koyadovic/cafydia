@@ -13,7 +13,7 @@
     android:orientation="vertical"
     android:id="@+id/rootLinearLayout">
 
-    <org.cafydia.android.views.ChartHbA1c
+    <org.cafydia4.android.views.ChartHbA1c
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
@@ -30,7 +30,7 @@
         android:paddingLeft="5dp"
         style="@style/MyFloatingLayoutStyle">
 
-        <org.cafydia.android.views.HbA1cImageView
+        <org.cafydia4.android.views.HbA1cImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:id="@+id/imageViewFace"/>

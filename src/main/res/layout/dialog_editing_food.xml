@@ -32,7 +32,7 @@
             style="@style/MyTextAppearance.FieldHeader"
             android:layout_marginTop="10dp" />
 
-        <org.cafydia.android.views.EditTextCarbohydratePercentage
+        <org.cafydia4.android.views.EditTextCarbohydratePercentage
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/carbohydratePercentage"/>
@@ -45,7 +45,7 @@
             android:id="@+id/textViewWeightUnitTitle"
             android:layout_marginTop="10dp" />
 
-        <org.cafydia.android.views.EditTextWeight
+        <org.cafydia4.android.views.EditTextWeight
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/weightPerUnit" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.cafydia.android" >
+    package="org.cafydia4.android" >
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -24,28 +24,28 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
 
-        android:backupAgent=".services.CafydiaAgentHelper"
+        android:backupAgent="org.cafydia4.android.services.CafydiaAgentHelper"
         android:theme="@style/MyTheme">
 
         <meta-data
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAIM0ZBn4DQPgCKEXz8wf1OngyjzpS6NXbiDwehXg" />
 
-        <receiver android:name=".services.CafydiaReceiver"/>
+        <receiver android:name="org.cafydia4.android.services.CafydiaReceiver"/>
 
-        <receiver android:name=".mealalarms.MealAlarmReceiver"/>
+        <receiver android:name="org.cafydia4.android.mealalarms.MealAlarmReceiver"/>
 
         <!-- When boot is completed, this class will start automatically the SetMealAlarmsService -->
-        <receiver android:name=".mealalarms.AutoStartMealAlarmService">
+        <receiver android:name="org.cafydia4.android.mealalarms.AutoStartMealAlarmService">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".mealalarms.SetMealAlarmsService" />
+        <service android:name="org.cafydia4.android.mealalarms.SetMealAlarmsService" />
 
         <activity
-            android:name=".activities.ActivitySendCrash"
+            android:name="org.cafydia4.android.activities.ActivitySendCrash"
             android:theme="@android:style/Theme.Holo.Dialog"
 
             android:windowSoftInputMode="stateHidden">
@@ -56,69 +56,69 @@
         </activity>
 
         <activity
-            android:name=".activities.ActivityMain"
+            android:name="org.cafydia4.android.activities.ActivityMain"
             android:label="@string/app_name">
         </activity>
 
-        <activity android:name=".activities.ActivityMealsSnacks"
-            android:parentActivityName=".activities.ActivityMain"
+        <activity android:name="org.cafydia4.android.activities.ActivityMealsSnacks"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:label="">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
-        <activity android:name=".activities.ActivityBaseline"
+        <activity android:name="org.cafydia4.android.activities.ActivityBaseline"
             android:label="@string/activity_baseline_label"
-            android:parentActivityName=".activities.ActivityMain"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
-        <activity android:name=".activities.ActivityAddComplexFood"
+        <activity android:name="org.cafydia4.android.activities.ActivityAddComplexFood"
             android:label="@string/complex_food_activity_title"
-            android:parentActivityName=".activities.ActivityMain"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
 
-        <activity android:name=".activities.ActivityMetabolicRhythms"
+        <activity android:name="org.cafydia4.android.activities.ActivityMetabolicRhythms"
             android:label="@string/metabolic_rhythms_activity_label"
-            android:parentActivityName=".activities.ActivityMain"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
 
-        <activity android:name=".activities.ActivityBuildCharts"
+        <activity android:name="org.cafydia4.android.activities.ActivityBuildCharts"
             android:label="@string/activity_charts_label"
-            android:parentActivityName=".activities.ActivityMain"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
 
-        <activity android:name=".activities.ActivitySettings"
+        <activity android:name="org.cafydia4.android.activities.ActivitySettings"
             android:label="@string/preferences_activity_title"
-            android:parentActivityName=".activities.ActivityMain"
+            android:parentActivityName="org.cafydia4.android.activities.ActivityMain"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:theme="@style/MyTheme.Settings" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMain" />
+                android:value="org.cafydia4.android.activities.ActivityMain" />
         </activity>
 
-        <activity android:name=".activities.ActivityStart"
+        <activity android:name="org.cafydia4.android.activities.ActivityStart"
             android:theme="@style/MyThemeStart" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -127,7 +127,7 @@
 
         </activity>
 
-        <activity android:name=".initialconfiguration.InitialConfigurationActivity"
+        <activity android:name="org.cafydia4.android.initialconfiguration.InitialConfigurationActivity"
             android:windowSoftInputMode="adjustResize"
             android:theme="@style/MyThemeStart" >
         </activity>

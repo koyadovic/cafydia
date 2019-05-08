@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.cafydia.android.views.ChartPageElementTextView
+<org.cafydia4.android.views.ChartPageElementTextView
     style="@style/ChartPageElement.Text" />
 

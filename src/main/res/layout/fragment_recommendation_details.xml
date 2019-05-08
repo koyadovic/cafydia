@@ -83,7 +83,7 @@
                             android:gravity="end" />
                     </LinearLayout>
 
-                    <org.cafydia.android.views.BaselineChartView
+                    <org.cafydia4.android.views.BaselineChartView
                         android:clickable="false"
                         android:id="@+id/baselineChart"
                         style="@style/MetabolicChart"/>
@@ -161,7 +161,7 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/bg_section_layout_preprandial"/>
 
-                            <org.cafydia.android.views.ModificationStartView
+                            <org.cafydia4.android.views.ModificationStartView
                                 android:clickable="false"
                                 android:id="@+id/preprandialBeginning"
                                 style="@style/MetabolicChart" />
@@ -178,7 +178,7 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/bg_section_layout_basal"/>
 
-                            <org.cafydia.android.views.ModificationStartView
+                            <org.cafydia4.android.views.ModificationStartView
                                 android:clickable="false"
                                 android:id="@+id/basalBeginning"
                                 style="@style/MetabolicChart" />

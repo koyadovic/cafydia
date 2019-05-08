@@ -16,7 +16,7 @@
             android:orientation="vertical"
             android:id="@+id/mainLayout">
 
-            <org.cafydia.android.views.HbA1cImageView
+            <org.cafydia4.android.views.HbA1cImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageViewFace"
@@ -73,7 +73,7 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
 
-                        <org.cafydia.android.views.GlucoseRingChart
+                        <org.cafydia4.android.views.GlucoseRingChart
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:id="@+id/breakfastRing" />
@@ -93,7 +93,7 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
 
-                        <org.cafydia.android.views.GlucoseRingChart
+                        <org.cafydia4.android.views.GlucoseRingChart
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:id="@+id/lunchRing" />
@@ -115,7 +115,7 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
 
-                        <org.cafydia.android.views.GlucoseRingChart
+                        <org.cafydia4.android.views.GlucoseRingChart
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:id="@+id/dinnerRing" />

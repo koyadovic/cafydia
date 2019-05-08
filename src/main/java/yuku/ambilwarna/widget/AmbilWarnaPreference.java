@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 
-import org.cafydia.android.R;
+import org.cafydia4.android.R;
 
 import yuku.ambilwarna.AmbilWarnaDialog;
 

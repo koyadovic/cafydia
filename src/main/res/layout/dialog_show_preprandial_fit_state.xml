@@ -70,7 +70,7 @@
         android:layout_marginRight="10dp"
         android:gravity="start" />
 
-    <org.cafydia.android.views.BaselineChartView
+    <org.cafydia4.android.views.BaselineChartView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"

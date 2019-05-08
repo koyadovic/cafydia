@@ -14,7 +14,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import org.cafydia.android.R;
+import org.cafydia4.android.R;
 
 public class AmbilWarnaDialog {
 	public interface OnAmbilWarnaListener {

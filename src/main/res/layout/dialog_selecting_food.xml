@@ -28,7 +28,7 @@
         style="@style/MyTextAppearance.FieldHeader"
         android:layout_marginTop="10dp" />
 
-    <org.cafydia.android.views.EditTextWeight
+    <org.cafydia4.android.views.EditTextWeight
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -41,7 +41,7 @@
         style="@style/MyTextAppearance.FieldHeader"
         android:id="@+id/textViewUnits" />
 
-    <org.cafydia.android.views.EditTextUnits
+    <org.cafydia4.android.views.EditTextUnits
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"

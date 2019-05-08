@@ -50,7 +50,7 @@
                 android:id="@+id/tvWeight"
                 style="@style/MyTextAppearance.FieldHeader"/>
 
-            <org.cafydia.android.views.EditTextWeight
+            <org.cafydia4.android.views.EditTextWeight
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/totalWeight"/>

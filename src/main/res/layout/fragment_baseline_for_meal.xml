@@ -70,7 +70,7 @@
             <View style="@style/MySeparatorStyle.Preprandial"
                 android:layout_margin="0dp" />
 
-            <org.cafydia.android.views.ModificationZoneView
+            <org.cafydia4.android.views.ModificationZoneView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/modificationZoneView"/>
@@ -109,7 +109,7 @@
 
             </LinearLayout>
 
-            <org.cafydia.android.views.BaselineChartView
+            <org.cafydia4.android.views.BaselineChartView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/baselineChart"

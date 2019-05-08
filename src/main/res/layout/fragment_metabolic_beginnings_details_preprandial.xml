@@ -79,7 +79,7 @@ android:layout_height="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_view_more_black">
 
-                <org.cafydia.android.views.ModificationStartView
+                <org.cafydia4.android.views.ModificationStartView
                     style="@style/MetabolicChart"
                     android:id="@+id/chartBreakfast" />
 
@@ -98,7 +98,7 @@ android:layout_height="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_view_more_black">
 
-                <org.cafydia.android.views.ModificationStartView
+                <org.cafydia4.android.views.ModificationStartView
                     style="@style/MetabolicChart"
                     android:id="@+id/chartLunch" />
 
@@ -117,7 +117,7 @@ android:layout_height="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_view_more_black">
 
-                <org.cafydia.android.views.ModificationStartView
+                <org.cafydia4.android.views.ModificationStartView
                     style="@style/MetabolicChart"
                     android:id="@+id/chartDinner" />
 
