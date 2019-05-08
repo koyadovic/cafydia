@@ -33,6 +33,8 @@ import org.cafydia.android.adapters.FoodFragmentPagerAdapter;
 import org.cafydia.android.bedcasearch.BedcaSearch;
 import org.cafydia.android.core.Food;
 import org.cafydia.android.dialogfragments.DialogFoodEditor;
+import org.cafydia.android.interfaces.OnFoodEdited;
+import org.cafydia.android.interfaces.OnFoodModifiedInterface;
 import org.cafydia.android.util.C;
 import org.cafydia.android.util.CheckInternetConnection;
 import org.cafydia.android.util.MyFoodArrayList;
@@ -41,8 +43,8 @@ import org.cafydia.android.util.OnSwipeTouchListener;
 /**
  * Created by user on 20/08/14.
  */
-public class FoodFragment extends Fragment implements FoodFragmentSingleView.OnFoodModifiedInterface,
-        DialogFoodEditor.OnFoodEdited {
+public class FoodFragment extends Fragment implements OnFoodModifiedInterface,
+        OnFoodEdited {
 
     // related to configuration and state
     boolean mIsPhone;

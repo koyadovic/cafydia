@@ -26,13 +26,15 @@ import org.cafydia.android.configdatabase.ConfigurationDatabase;
 import org.cafydia.android.core.Food;
 import org.cafydia.android.dialogfragments.CafydiaAlertDialog;
 import org.cafydia.android.dialogfragments.DialogFoodEditor;
+import org.cafydia.android.interfaces.OnFoodEdited;
+import org.cafydia.android.interfaces.OnFoodModifiedInterface;
 import org.cafydia.android.util.C;
 import org.cafydia.android.util.MyFoodArrayList;
 
 /**
  * Created by user on 21/08/14.
  */
-public class FoodFragmentSingleView extends Fragment  implements  DialogFoodEditor.OnFoodEdited {
+public class FoodFragmentSingleView extends Fragment implements OnFoodEdited {
     private static final String POS = "position";
     private ListView mLvFood;
 
@@ -441,12 +443,6 @@ public class FoodFragmentSingleView extends Fragment  implements  DialogFoodEdit
             }
         }
     }
-
-    public interface OnFoodModifiedInterface {
-        void onFoodModified(int action, int positionInTheViewPager, Food food);
-    }
-
-
 
     public void onFoodEdited(int callerFragmentPosition, Food food) {
         //((FoodAdapter) mLvFood.getAdapter()).addOrUpdateFood(food);

@@ -14,6 +14,9 @@ import com.google.gson.Gson;
 import org.cafydia.android.R;
 import org.cafydia.android.configdatabase.ConfigurationDatabase;
 import org.cafydia.android.core.Food;
+import org.cafydia.android.fragments.FoodFragmentSingleView;
+import org.cafydia.android.interfaces.OnFoodEdited;
+import org.cafydia.android.interfaces.OnFoodModifiedInterface;
 import org.cafydia.android.util.C;
 import org.cafydia.android.util.MyRound;
 import org.cafydia.android.util.UnitChanger;
@@ -25,7 +28,7 @@ import org.cafydia.android.views.EditTextWeight;
  * Created by user on 23/08/14.
  */
 @SuppressWarnings("NullableProblems")
-public class DialogFoodEditor extends DialogFragment {
+public class DialogFoodEditor extends DialogFragment implements OnFoodModifiedInterface {
 
     private static final String FOOD_TO_EDIT = "food_to_edit";
     private static final String CALLER_POSITION = "caller_position";
@@ -155,7 +158,7 @@ public class DialogFoodEditor extends DialogFragment {
         return builder.create();
     }
 
-    public interface OnFoodEdited {
-        void onFoodEdited(int position, Food food);
+    public void onFoodModified(int action, int positionInTheViewPager, Food food) {
+
     }
 }
