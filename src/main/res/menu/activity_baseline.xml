@@ -12,5 +12,9 @@
         android:title="@string/activity_baseline_action_button_done"
         android:showAsAction="always" />
 
+    <item android:id="@+id/manualConfig"
+        android:icon="@drawable/ic_main_menu_options_icon"
+        android:title="@string/manual_config"
+        android:showAsAction="always" />
 
 </menu>

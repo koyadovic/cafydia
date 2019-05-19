@@ -961,4 +961,13 @@ from the use or distribution of the Software in violation of this Agreement.</p>
     <string name="baseline_preprandial_fit_still_need3">or less than</string>
     <string name="baseline_preprandial_fit_still_need4">of carbohydrates</string>
 
+
+
+    <string name="Breakfast">Breakfast</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Save">Save</string>
+    <string name="m">m</string>
+    <string name="b">b</string>
+    <string name="manual_config">Manual Config</string>
 </resources>

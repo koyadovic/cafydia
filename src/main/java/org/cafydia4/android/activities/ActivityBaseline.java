@@ -3,6 +3,7 @@ package org.cafydia4.android.activities;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 
 import org.cafydia4.android.R;
 import org.cafydia4.android.datadatabase.DataDatabase;
+import org.cafydia4.android.dialogfragments.DialogManualFunctionParameters;
 import org.cafydia4.android.dialogfragments.DialogMealFinished;
 import org.cafydia4.android.fragments.BaselineFragment;
 import org.cafydia4.android.genericdialogfragments.DialogConfirmation;
@@ -72,9 +74,6 @@ public class ActivityBaseline extends FragmentActivity {
                 mDataDatabase = mFramework.getDataDatabase();
                 mPreprandial = mFramework.getBaselinePreprandial();
                 mBasal = mFramework.getBaselineBasal();
-
-
-
             }
         });
 
@@ -222,7 +221,9 @@ public class ActivityBaseline extends FragmentActivity {
 
                 return true;
 
-
+            case R.id.manualConfig:
+                FragmentManager fm = getSupportFragmentManager();
+                DialogManualFunctionParameters.newInstance().show(fm, "manual_parameters_dialog_fragment");
         }
 
         return super.onOptionsItemSelected(item);

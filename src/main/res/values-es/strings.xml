@@ -848,5 +848,14 @@
     <string name="baseline_preprandial_fit_still_need3">or menos de</string>
     <string name="baseline_preprandial_fit_still_need4">de carbohidratos</string>
 
+
+    <string name="Breakfast">Desayuno</string>
+    <string name="Lunch">Comida</string>
+    <string name="Dinner">Cena</string>
+    <string name="Save">Guardar</string>
+    <string name="m">m</string>
+    <string name="b">b</string>
+    <string name="manual_config">Config Manual</string>
+
 </resources>
 
