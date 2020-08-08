@@ -2,6 +2,7 @@ package org.cafydia4.android.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Region;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.TextView;
@@ -42,7 +43,7 @@ public class VerticalTextView extends TextView {
             canvas.translate(0, getWidth());
             canvas.rotate(-90);
         }
-        canvas.clipRect(0, 0, getWidth(), getHeight(), android.graphics.Region.Op.REPLACE);
+        canvas.clipRect(0, 0, getWidth(), getHeight(), Region.Op.INTERSECT);
         super.draw(canvas);
     }
 }
