@@ -36,14 +36,16 @@ public class VerticalTextView extends TextView {
 
     @Override
     public void draw(Canvas canvas){
+        int h = getHeight();
+        int w = getWidth();
         if(topDown){
-            canvas.translate(getHeight(), 0);
+            canvas.translate(h, 0);
             canvas.rotate(90);
         }else {
-            canvas.translate(0, getWidth());
+            canvas.translate(0, w);
             canvas.rotate(-90);
         }
-        canvas.clipRect(0, 0, getWidth(), getHeight(), Region.Op.INTERSECT);
+        canvas.clipRect(0, 0, w, h, Region.Op.INTERSECT);
         super.draw(canvas);
     }
 }
