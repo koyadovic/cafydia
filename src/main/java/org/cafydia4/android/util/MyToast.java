@@ -41,11 +41,12 @@ public class MyToast {
         View view = mToast.getView();
 
         // background
-        view.setBackgroundColor(mContext.getResources().getColor(R.color.colorCafydiaDefault));
-
-        TextView textView = (TextView) mToast.getView().findViewById(android.R.id.message);
-        textView.setTextAppearance(mContext, R.style.MyTextAppearance_Toast);
-        textView.setGravity(Gravity.CENTER);
+        if(view != null) {
+            view.setBackgroundColor(mContext.getResources().getColor(R.color.colorCafydiaDefault));
+            TextView textView = (TextView) view.findViewById(android.R.id.message);
+            textView.setTextAppearance(mContext, R.style.MyTextAppearance_Toast);
+            textView.setGravity(Gravity.CENTER);
+        }
 
         mToast.show();
 
